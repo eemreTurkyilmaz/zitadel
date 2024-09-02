@@ -1,0 +1,2658 @@
+{
+    "APP_NAME": "ZITADEL",
+    "DESCRIPTIONS": {
+      "METADATA_TITLE": "Meta veriler",
+      "HOME": {
+        "TITLE": "ZITADEL'i kullanmaya başlayın",
+        "NEXT": {
+          "TITLE": "Sonraki adımlarınız",
+          "DESCRIPTION": "Başvurunuzu güvence altına almak için aşağıdaki adımları tamamlayın.",
+          "CREATE_PROJECT": {
+            "TITLE": "Proje oluştur",
+            "DESCRIPTION": "Bir proje ekleyin ve rollerini ve yetkilerini tanımlayın."
+          }
+        },
+        "MORE_SHORTCUTS": {
+          "GET_STARTED": {
+            "TITLE": "Başlayın",
+            "DESCRIPTION": "Hızlı başlangıç ​​adım adım kılavuzunu izleyin ve hemen oluşturmaya başlayın."
+          },
+          "DOCS": {
+            "TITLE": "Dokümantasyon",
+            "DESCRIPTION": "Temel kavram ve fikirlere aşina olmak için ZITADEL'in bilgi tabanını keşfedin. "
+          },
+          "EXAMPLES": {
+            "TITLE": "Örnekler ve Yazılım Geliştirme Kitleri",
+            "DESCRIPTION": "ZITADEL'i favori programlama dilleriniz ve araçlarınızla birlikte kullanmak için örneklerimize ve SDK'larımıza göz atın."
+          }
+        }
+      },
+      "ORG": {
+        "TITLE": "Organizasyon",
+        "DESCRIPTION": "Bir kuruluş, kullanıcıları, uygulamaları içeren projeleri, kimlik sağlayıcıları ve şirket markalaması gibi ayarları barındırır. ",
+        "METADATA": "Kuruluşa konumu veya başka bir sistemdeki tanımlayıcı gibi özel nitelikler ekleyin. "
+      },
+      "PROJECTS": {
+        "TITLE": "Projeler",
+        "DESCRIPTION": "Bir proje, kullanıcılarınızın kimliğini doğrulamak için kullanabileceğiniz bir veya daha fazla uygulamayı barındırır. <br/><br/>Bir projeyi bulamazsanız erişim kazanmak için projenin sahibiyle veya ilgili haklara sahip biriyle iletişime geçin.",
+        "OWNED": {
+          "TITLE": "Sahip Olunan Projeler",
+          "DESCRIPTION": "Bunlar sahip olduğunuz projeler. "
+        },
+        "GRANTED": {
+          "TITLE": "Hibe Edilen Projeler",
+          "DESCRIPTION": "Bunlar diğer kuruluşların size verdiği projeler. "
+        }
+      },
+      "USERS": {
+        "TITLE": "Kullanıcılar",
+        "DESCRIPTION": "Kullanıcı, uygulamalarınıza erişebilen bir insan veya makinedir.",
+        "HUMANS": {
+          "TITLE": "Kullanıcılar",
+          "DESCRIPTION": "Kullanıcılar, bir tarayıcı oturumunda oturum açma istemiyle etkileşimli olarak kimlik doğrulaması yapar.",
+          "METADATA": "Departman gibi kullanıcıya özel nitelikler ekleyin. "
+        },
+        "MACHINES": {
+          "TITLE": "Hizmet Kullanıcıları",
+          "DESCRIPTION": "Hizmet Kullanıcıları, özel bir anahtarla imzalanmış bir JWT taşıyıcı jetonunu kullanarak etkileşimli olmayan bir şekilde kimlik doğrulaması yapar. ",
+          "METADATA": "Kimlik doğrulama sistemi gibi kullanıcıya özel nitelikler ekleyin. "
+        },
+        "SELF": {
+          "METADATA": "Kullanıcınıza departmanınız gibi özel özellikler ekleyin. "
+        }
+      },
+      "AUTHORIZATIONS": {
+        "TITLE": "Yetkiler",
+        "DESCRIPTION": "Yetkiler, kullanıcının bir projeye erişim haklarını tanımlar. "
+      },
+      "ACTIONS": {
+        "TITLE": "Eylemler",
+        "DESCRIPTION": "Kullanıcılarınız ZITADEL'de kimlik doğrulaması yaparken meydana gelen olaylarda özel kod çalıştırın. ",
+        "SCRIPTS": {
+          "TITLE": "Komut dosyaları",
+          "DESCRIPTION": "JavaScript kodunuzu bir kez yazın ve birden çok akışta tetikleyin."
+        },
+        "FLOWS": {
+          "TITLE": "Akışlar",
+          "DESCRIPTION": "Bir kimlik doğrulama akışı seçin ve eyleminizi bu akış içindeki belirli bir etkinlikte tetikleyin."
+        }
+      },
+      "SETTINGS": {
+        "INSTANCE": {
+          "TITLE": "Varsayılan Ayarlar",
+          "DESCRIPTION": "Tüm kuruluşlar için varsayılan ayarlar. "
+        },
+        "ORG": {
+          "TITLE": "Organizasyon Ayarları",
+          "DESCRIPTION": "Kuruluşunuzun ayarlarını özelleştirin."
+        },
+        "FEATURES": {
+          "TITLE": "Özellik Ayarları",
+          "DESCRIPTION": "Örneğiniz için özelliklerin kilidini açın."
+        },
+        "IDPS": {
+          "TITLE": "Kimlik Sağlayıcılar",
+          "DESCRIPTION": "Harici kimlik sağlayıcıları oluşturun ve etkinleştirin. ",
+          "NEXT": "Şimdi ne olacak?",
+          "SAML": {
+            "TITLE": "SAML Kimlik Sağlayıcınızı yapılandırın",
+            "DESCRIPTION": "ZITADEL yapılandırıldı. "
+          },
+          "CALLBACK": {
+            "TITLE": "Yapılandırmanızı yapın {{ provider }} Kimlik Sağlayıcı",
+            "DESCRIPTION": "ZITADEL'i yapılandırmadan önce, kimlik doğrulama sonrasında tarayıcının ZITADEL'e geri yönlendirilmesini etkinleştirmek için bu URL'yi Kimlik Sağlayıcınıza iletin."
+          },
+          "JWT": {
+            "TITLE": "JWT'leri birleştirilmiş Kimlikler olarak kullanın",
+            "DESCRIPTION": "JWT Kimlik Sağlayıcı, mevcut JWT belirteçlerinizi birleşik kimlikler olarak kullanmanızı sağlar. "
+          },
+          "LDAP": {
+            "TITLE": "LDAP Kimlik Sağlayıcınıza bağlanmak için ZITADEL'i yapılandırın",
+            "DESCRIPTION": "LDAP sunucunuza bağlantı ayrıntılarını sağlayın ve LDAP özniteliklerinizin ZITADEL öznitelikleriyle eşlenmesini yapılandırın."
+          },
+          "AUTOFILL": {
+            "TITLE": "Kullanıcı verilerini otomatik doldurma",
+            "DESCRIPTION": "Kullanıcı deneyiminizi geliştirmek için bir eylem kullanın. "
+          },
+          "ACTIVATE": {
+            "TITLE": "IdP'yi etkinleştirin",
+            "DESCRIPTION": "IdP'niz henüz aktif değil. "
+          }
+        },
+        "PW_COMPLEXITY": {
+          "TITLE": "Şifre Karmaşıklığı",
+          "DESCRIPTION": "Karmaşıklık kuralları tanımlayarak kullanıcılarınızın güçlü şifreler kullanmasını sağlayın."
+        },
+        "BRANDING": {
+          "TITLE": "Özelleştirme",
+          "DESCRIPTION": "Giriş formunuzun görünümünü ve tarzını özelleştirin. "
+        },
+        "PRIVACY_POLICY": {
+          "TITLE": "Dış Bağlantılar",
+          "DESCRIPTION": "Kullanıcılarınızı giriş sayfasında gösterilen özel harici kaynaklara yönlendirin. "
+        },
+        "SMTP_PROVIDER": {
+          "TITLE": "SMTP Ayarları",
+          "DESCRIPTION": "SMTP sunucunuzu, gönderen adresi için kullanıcılarınızın bildiği ve güvendiği bir etki alanı kullanacak şekilde yapılandırın."
+        },
+        "SMS_PROVIDER": {
+          "TITLE": "SMS Ayarları",
+          "DESCRIPTION": "Tüm ZITADEL özelliklerinin kilidini açmak için Twilio'yu kullanıcılarınıza SMS mesajları gönderecek şekilde yapılandırın."
+        },
+        "IAM_EVENTS": {
+          "TITLE": "Olaylar",
+          "DESCRIPTION": "Bu sayfa, örneğinizin denetim takibi sınırına kadar olan tüm durum değişikliklerini gösterir. "
+        },
+        "IAM_FAILED_EVENTS": {
+          "TITLE": "Başarısız Etkinlikler",
+          "DESCRIPTION": "Bu sayfa, örneğinizdeki tüm başarısız olayları gösterir. "
+        },
+        "IAM_VIEWS": {
+          "TITLE": "Görünümler",
+          "DESCRIPTION": "Bu sayfa tüm veritabanı görünümlerinizi ve en son olaylarını ne zaman işlediklerini gösterir. "
+        },
+        "LANGUAGES": {
+          "TITLE": "Diller",
+          "DESCRIPTION": "Giriş formunun ve bildirim mesajlarının çevrileceği dilleri kısıtlayın. "
+        },
+        "SECRET_GENERATORS": {
+          "TITLE": "Gizli Jeneratörler",
+          "DESCRIPTION": "Sırlarınızın karmaşıklıklarını ve yaşam sürelerini tanımlayın. "
+        },
+        "SECURITY": {
+          "TITLE": "Güvenlik Ayarları",
+          "DESCRIPTION": "Güvenlik etkileri olabilecek ZITADEL özelliklerini etkinleştirin. "
+        },
+        "OIDC": {
+          "TITLE": "OpenID Bağlantı Ayarları",
+          "DESCRIPTION": "OIDC belirteci yaşam sürelerinizi yapılandırın. ",
+          "LABEL_HOURS": "Saat cinsinden Maksimum Ömür",
+          "LABEL_DAYS": "Gün cinsinden Maksimum Ömür",
+          "ACCESS_TOKEN": {
+            "TITLE": "Erişim Jetonu",
+            "DESCRIPTION": "Erişim belirteci bir kullanıcının kimliğini doğrulamak için kullanılır. "
+          },
+          "ID_TOKEN": {
+            "TITLE": "Kimlik Jetonu",
+            "DESCRIPTION": "Kimlik belirteci, kullanıcı hakkındaki talepleri içeren bir JSON Web Belirtecidir (JWT). "
+          },
+          "REFRESH_TOKEN": {
+            "TITLE": "Refresh token",
+            "DESCRIPTION": "Yenileme belirteci, yeni bir erişim belirteci elde etmek için kullanılır. "
+          },
+          "REFRESH_TOKEN_IDLE": {
+            "TITLE": "Boşta Yenileme Jetonu",
+            "DESCRIPTION": "Boşta yenileme belirtecinin ömrü, bir yenileme belirtecinin kullanılamayacağı maksimum süredir."
+          }
+        },
+        "MESSAGE_TEXTS": {
+          "TITLE": "Mesaj Metinleri",
+          "DESCRIPTION": "Bildirim e-postanızın veya SMS mesajlarınızın metinlerini özelleştirin. ",
+          "TYPE_DESCRIPTIONS": {
+            "DC": "Kuruluşunuz için bir alan adı talebinde bulunduğunuzda, giriş adlarında bu alan adını kullanmayan kullanıcılardan, talep edilen alan adıyla eşleşecek şekilde giriş adlarını değiştirmeleri istenecektir.",
+            "INIT": "Bir kullanıcı oluşturulduğunda, şifresini belirleme bağlantısını içeren bir e-posta alacaktır.",
+            "PC": "Bir kullanıcı şifresini değiştirdiğinde, bildirim ayarlarında bunu etkinleştirdiyseniz, değişiklik hakkında bir bildirim alacaktır.",
+            "PL": "Kullanıcı parolasız bir kimlik doğrulama yöntemi eklediğinde, e-postadaki bir bağlantıya tıklayarak bu yöntemi etkinleştirmesi gerekir.",
+            "PR": "Kullanıcı şifresini sıfırladığında, yeni şifre belirleme bağlantısını içeren bir e-posta alacaktır.",
+            "VE": "Bir kullanıcı e-posta adresini değiştirdiğinde, yeni adresi doğrulamak için bir bağlantı içeren bir e-posta alacaktır.",
+            "VP": "Bir kullanıcı telefon numarasını değiştirdiğinde, yeni numarayı doğrulamak için bir kod içeren bir SMS alacaktır.",
+            "VEO": "Kullanıcı, e-posta yöntemiyle Tek Kullanımlık Şifre eklediğinde, e-posta adresine gönderilen kodu girerek şifreyi etkinleştirmesi gerekir.",
+            "VSO": "Kullanıcının SMS yöntemiyle Tek Kullanımlık Şifre eklediğinde, telefon numarasına gönderilen kodu girerek aktifleştirmesi gerekmektedir."
+          }
+        },
+        "LOGIN_TEXTS": {
+          "TITLE": "Giriş Arayüzü Metinleri",
+          "DESCRIPTION": "Giriş formunuzun metinlerini özelleştirin. "
+        },
+        "DOMAINS": {
+          "TITLE": "Etki Alanı Ayarları",
+          "DESCRIPTION": "Alan adlarınıza ilişkin kısıtlamaları tanımlayın ve oturum açma adı modellerinizi yapılandırın.",
+          "REQUIRE_VERIFICATION": {
+            "TITLE": "Özel alan adlarının doğrulanmasını gerektir",
+            "DESCRIPTION": "Bu etkinleştirilirse, kuruluş etki alanlarının etki alanı keşfi veya kullanıcı adı son eki için kullanılmadan önce doğrulanması gerekir."
+          },
+          "LOGIN_NAME_PATTERN": {
+            "TITLE": "Oturum Açma Adı Modeli",
+            "DESCRIPTION": "Kullanıcılarınızın oturum açma adlarının şeklini kontrol edin. "
+          },
+          "DOMAIN_VERIFICATION": {
+            "TITLE": "Alan Adı Doğrulaması",
+            "DESCRIPTION": "Kuruluşunuzun yalnızca gerçekte kontrol ettiği etki alanlarını kullanmasına izin verin. "
+          },
+          "SMTP_SENDER_ADDRESS": {
+            "TITLE": "SMTP Gönderen Adresi",
+            "DESCRIPTION": "Bir SMTP gönderen adresine yalnızca örnek alan adlarınızdan biriyle eşleşiyorsa izin verin."
+          }
+        },
+        "LOGIN": {
+          "LIFETIMES": {
+            "TITLE": "Giriş Ömürleri",
+            "DESCRIPTION": "Oturum açmayla ilgili bazı maksimum yaşam sürelerini azaltarak güvenliğinizi güçlendirin.",
+            "LABEL": "Saat cinsinden Maksimum Ömür",
+            "PW_CHECK": {
+              "TITLE": "Şifre Kontrolü",
+              "DESCRIPTION": "Bu sürenin sonunda kullanıcıların şifreleriyle yeniden kimlik doğrulaması yapması gerekecektir."
+            },
+            "EXT_LOGIN_CHECK": {
+              "TITLE": "Harici Giriş Kontrolü",
+              "DESCRIPTION": "Kullanıcılarınız bu dönemlerde harici kimlik sağlayıcılarına yönlendirilir."
+            },
+            "MULTI_FACTOR_INIT": {
+              "TITLE": "Çok Faktörlü Başlatma Kontrolü",
+              "DESCRIPTION": "Kullanıcılarınızdan, henüz yapmamışlarsa, bu dönemlerde ikinci bir faktör veya Multifaktör ayarlamaları istenecektir. "
+            },
+            "SECOND_FACTOR_CHECK": {
+              "TITLE": "İkinci Faktör Kontrolü",
+              "DESCRIPTION": "Kullanıcılarınızın bu dönemlerde ikinci faktörünü yeniden doğrulamaları gerekiyor."
+            },
+            "MULTI_FACTOR_CHECK": {
+              "TITLE": "Çok Faktörlü Kontrol",
+              "DESCRIPTION": "Kullanıcılarınızın bu dönemlerde Multifactor'larını yeniden doğrulamaları gerekir."
+            }
+          },
+          "FORM": {
+            "TITLE": "Giriş Formu",
+            "DESCRIPTION": "Giriş formunu özelleştirin.",
+            "USERNAME_PASSWORD_ALLOWED": {
+              "TITLE": "Kullanıcı adı ve Şifreye izin verildi",
+              "DESCRIPTION": "Kullanıcılarınızın kullanıcı adı ve şifreleriyle giriş yapmalarına izin verin. "
+            },
+            "USER_REGISTRATION_ALLOWED": {
+              "TITLE": "Kullanıcı Kaydına izin verildi",
+              "DESCRIPTION": "Anonim kullanıcıların hesap oluşturmasına izin ver."
+            },
+            "ORG_REGISTRATION_ALLOWED": {
+              "TITLE": "Organizasyon Kaydına izin verildi",
+              "DESCRIPTION": "Anonim kullanıcıların bir kuruluş oluşturmasına izin verin."
+            },
+            "EXTERNAL_LOGIN_ALLOWED": {
+              "TITLE": "Harici Girişe izin verildi",
+              "DESCRIPTION": "Kullanıcılarınızın oturum açmak için ZITADEL kullanıcısını kullanmak yerine harici bir kimlik sağlayıcıyla oturum açmasına izin verin."
+            },
+            "HIDE_PASSWORD_RESET": {
+              "TITLE": "Şifre Sıfırlama gizli",
+              "DESCRIPTION": "Kullanıcılarınızın şifrelerini sıfırlamalarına izin vermeyin."
+            },
+            "DOMAIN_DISCOVERY_ALLOWED": {
+              "TITLE": "Etki Alanı Keşfine izin verildi",
+              "DESCRIPTION": "Kullanıcılarınızın kuruluşlarını, giriş adlarının etki alanına (örneğin, e-posta adreslerine) bağlı olarak bulun."
+            },
+            "IGNORE_UNKNOWN_USERNAMES": {
+              "TITLE": "Bilinmeyen Kullanıcı Adlarını Yoksay",
+              "DESCRIPTION": "Bu etkinleştirilirse, kullanıcı adı bilinmiyorsa giriş formunda bir hata mesajı gösterilmez. "
+            },
+            "DISABLE_EMAIL_LOGIN": {
+              "TITLE": "E-posta Girişini Devre Dışı Bırak",
+              "DESCRIPTION": "Bu etkinleştirilirse kullanıcılarınız oturum açmak için e-posta adreslerini kullanamaz. Bunu devre dışı bırakırsanız, oturum açabilmeniz için kullanıcılarınızın e-posta adreslerinin tüm kuruluşlarda benzersiz olması gerektiğini unutmayın."
+            },
+            "DISABLE_PHONE_LOGIN": {
+              "TITLE": "Telefonla Girişi Devre Dışı Bırak",
+              "DESCRIPTION": "Bu etkinleştirilirse kullanıcılarınız oturum açmak için telefon numaralarını kullanamaz. Bunu devre dışı bırakırsanız, oturum açabilmek için kullanıcılarınızın telefon numaralarının tüm kuruluşlarda benzersiz olması gerektiğini unutmayın."
+            }
+          }
+        }
+      }
+    },
+    "PAGINATOR": {
+      "PREVIOUS": "Öncesi",
+      "NEXT": "Sonraki",
+      "COUNT": "Toplam Sonuçlar",
+      "MORE": "Daha"
+    },
+    "FOOTER": {
+      "LINKS": {
+        "CONTACT": "Temas etmek",
+        "TOS": "Hizmet Şartları",
+        "PP": "Gizlilik Politikası"
+      },
+      "THEME": {
+        "DARK": "Karanlık",
+        "LIGHT": "Açık"
+      }
+    },
+    "HOME": {
+      "WELCOME": "ZITADEL'i kullanmaya başlayın",
+      "DISCLAIMER": "ZITADEL, verilerinizi gizli ve güvenli bir şekilde ele alır.",
+      "DISCLAIMERLINK": "Daha fazla bilgi",
+      "DOCUMENTATION": {
+        "DESCRIPTION": "ZITADEL'e hızlı bir şekilde başlayın."
+      },
+      "GETSTARTED": {
+        "DESCRIPTION": "ZITADEL'e hızlı bir şekilde başlayın."
+      },
+      "QUICKSTARTS": {
+        "LABEL": "İlk Adımlar",
+        "DESCRIPTION": "ZITADEL'e hızlı bir şekilde başlayın."
+      },
+      "SHORTCUTS": {
+        "SHORTCUTS": "Kısayollar",
+        "SETTINGS": "Mevcut kısayollar",
+        "PROJECTS": "Projeler",
+        "REORDER": "Taşımak için döşemeyi basılı tutun ve sürükleyin",
+        "ADD": "Eklemek için bir döşemeyi basılı tutun ve sürükleyin"
+      }
+    },
+    "ONBOARDING": {
+      "DESCRIPTION": "Sonraki adımlarınız",
+      "MOREDESCRIPTION": "daha fazla kısayol",
+      "COMPLETED": "tamamlanmış",
+      "DISMISS": "Hayır teşekkürler, ben bir profesyonelim.",
+      "CARD": {
+        "TITLE": "ZITADEL'inizi çalıştırın",
+        "DESCRIPTION": "Bu kontrol listesi örneğinizin kurulumuna yardımcı olur ve en önemli adımlarda size yol gösterir"
+      },
+      "MILESTONES": {
+        "instance.policy.label.added": {
+          "title": "Markanızı oluşturun",
+          "description": "Giriş bilgilerinizin rengini ve şeklini tanımlayın ve logonuzu ve simgelerinizi yükleyin.",
+          "action": "Markalamayı ayarlayın"
+        },
+        "instance.smtp.config.added": {
+          "title": "SMTP ayarlarınızı yapın",
+          "description": "Kendi posta sunucusu ayarlarınızı yapın.",
+          "action": "SMTP'yi kurun"
+        },
+        "PROJECT_CREATED": {
+          "title": "Proje oluştur",
+          "description": "Bir proje ekleyin ve rollerini ve yetkilerini tanımlayın.",
+          "action": "Proje oluştur"
+        },
+        "APPLICATION_CREATED": {
+          "title": "Uygulamanızı kaydedin",
+          "description": "Web, yerel, API veya saml uygulamanızı kaydedin ve bir kimlik doğrulama akışı ayarlayın.",
+          "action": "Uygulamayı kaydet"
+        },
+        "AUTHENTICATION_SUCCEEDED_ON_APPLICATION": {
+          "title": "Uygulamanızda oturum açın",
+          "description": "Kimlik doğrulama için uygulamanızı ZITADEL ile entegre edin ve yönetici kullanıcınızla oturum açarak test edin.",
+          "action": "Giriş yapmak"
+        },
+        "user.human.added": {
+          "title": "Kullanıcı ekle",
+          "description": "Uygulama kullanıcılarınızı ekleyin",
+          "action": "Kullanıcı ekle"
+        },
+        "user.grant.added": {
+          "title": "Kullanıcılara izin ver",
+          "description": "Kullanıcıların uygulamanıza erişmesine ve rollerini ayarlamasına izin verin.",
+          "action": "Kullanıcıya izin ver"
+        }
+      }
+    },
+    "MENU": {
+      "INSTANCE": "Varsayılan ayarlar",
+      "DASHBOARD": "Ev",
+      "PERSONAL_INFO": "Kişisel Bilgiler",
+      "DOCUMENTATION": "Dokümantasyon",
+      "INSTANCEOVERVIEW": "Misal",
+      "ORGS": "Organizasyonlar",
+      "VIEWS": "Görünümler",
+      "EVENTS": "Olaylar",
+      "FAILEDEVENTS": "Başarısız Etkinlikler",
+      "ORGANIZATION": "Organizasyon",
+      "PROJECT": "Projeler",
+      "PROJECTOVERVIEW": "Genel Bakış",
+      "PROJECTGRANTS": "Hibeler",
+      "ROLES": "Roller",
+      "GRANTEDPROJECT": "Hibe Edilen Projeler",
+      "HUMANUSERS": "Kullanıcılar",
+      "MACHINEUSERS": "Hizmet Kullanıcıları",
+      "LOGOUT": "Tüm Kullanıcıların Oturumunu Kapat",
+      "NEWORG": "Yeni Organizasyon",
+      "IAMADMIN": "Siz bir IAM Yöneticisisiniz. ",
+      "SHOWORGS": "Tüm Organizasyonları Göster",
+      "GRANTS": "Yetkiler",
+      "ACTIONS": "Eylemler",
+      "PRIVACY": "Mahremiyet",
+      "TOS": "Hizmet Şartları",
+      "OPENSHORTCUTSTOOLTIP": "Tip ? ",
+      "SETTINGS": "Ayarlar",
+      "CUSTOMERPORTAL": "Müşteri Portalı"
+    },
+    "QUICKSTART": {
+      "TITLE": "ZITADEL'i uygulamanıza entegre edin",
+      "DESCRIPTION": "ZITADEL'i uygulamanıza entegre edin veya birkaç dakika içinde başlamak için örneklerimizden birini kullanın.",
+      "BTN_START": "Başvuru Oluştur",
+      "BTN_LEARNMORE": "Daha fazla bilgi edin",
+      "CREATEPROJECTFORAPP": "Proje Oluştur {{value}}",
+      "SELECT_FRAMEWORK": "Çerçeveyi Seçin",
+      "FRAMEWORK": "Çerçeve",
+      "FRAMEWORK_OTHER": "Diğer (OIDC, SAML, API)",
+      "ALMOSTDONE": "Neredeyse bitti.",
+      "REVIEWCONFIGURATION": "Yapılandırmayı İncele",
+      "REVIEWCONFIGURATION_DESCRIPTION": "için temel bir yapılandırma oluşturduk. {{value}} uygulamalar. ",
+      "REDIRECTS": "Yönlendirmeleri yapılandırma",
+      "DEVMODEWARN": "Geliştirici Modu varsayılan olarak etkindir. ",
+      "GUIDE": "Rehber",
+      "BROWSEEXAMPLES": "Örneklere ve SDK'lara Göz Atın",
+      "DUPLICATEAPPRENAME": "Aynı adda bir uygulama zaten mevcut. ",
+      "DIALOG": {
+        "CHANGE": {
+          "TITLE": "Çerçeveyi Değiştir",
+          "DESCRIPTION": "Uygulamanızın hızlı kurulumu için mevcut çerçevelerden birini seçin."
+        }
+      }
+    },
+    "ACTIONS": {
+      "ACTIONS": "Eylemler",
+      "FILTER": "Filtre",
+      "RENAME": "Yeniden isimlendirmek",
+      "SET": "Ayarlamak",
+      "COPY": "Panoya kopyala",
+      "COPIED": "Panoya kopyalandı.",
+      "RESET": "Sıfırla",
+      "RESETDEFAULT": "Varsayılana Sıfırla",
+      "RESETTO": "Şuna sıfırla: ",
+      "RESETCURRENT": "Mevcut duruma sıfırla",
+      "SHOW": "Göstermek",
+      "HIDE": "Saklamak",
+      "SAVE": "Kaydetmek",
+      "SAVENOW": "Şimdi kaydet",
+      "NEW": "Yeni",
+      "ADD": "Eklemek",
+      "CREATE": "Yaratmak",
+      "CONTINUE": "Devam etmek",
+      "CONTINUEWITH": "Şununla devam et: {{value}}",
+      "BACK": "Geri",
+      "CLOSE": "Kapalı",
+      "CLEAR": "Temizlemek",
+      "CANCEL": "İptal etmek",
+      "INFO": "Bilgi",
+      "OK": "TAMAM",
+      "SELECT": "Seçme",
+      "VIEW": "Göstermek",
+      "SELECTIONDELETE": "Seçimi sil",
+      "DELETE": "Silmek",
+      "REMOVE": "Kaldırmak",
+      "VERIFY": "Doğrulamak",
+      "FINISH": "Sona ermek",
+      "FINISHED": "Kapalı",
+      "CHANGE": "Değiştirmek",
+      "REACTIVATE": "Yeniden etkinleştir",
+      "ACTIVATE": "Etkinleştir",
+      "DEACTIVATE": "Devre dışı bırak",
+      "REFRESH": "Yenile",
+      "LOGIN": "Giriş yapmak",
+      "EDIT": "Düzenlemek",
+      "PIN": "Sabitle / Sabitlemeyi kaldır",
+      "CONFIGURE": "Yapılandır",
+      "SEND": "Göndermek",
+      "NEWVALUE": "Yeni Değer",
+      "RESTORE": "Eski haline getirmek",
+      "CONTINUEWITHOUTSAVE": "Kaydetmeden devam et",
+      "OF": "ile ilgili",
+      "PREVIOUS": "Öncesi",
+      "NEXT": "Sonraki",
+      "MORE": "Daha",
+      "STEP": "Adım",
+      "SETUP": "Kurmak",
+      "TEST": "Test",
+      "UNSAVEDCHANGES": "Kaydedilmemiş değişiklikler",
+      "UNSAVED": {
+        "DIALOG": {
+          "DESCRIPTION": "Bu yeni eylemi silmek istediğinizden emin misiniz? ",
+          "CANCEL": "İptal etmek",
+          "DISCARD": "At"
+        }
+      },
+      "TABLE": {
+        "SHOWUSER": "Kullanıcıyı göster {{value}}"
+      },
+      "DOWNLOAD": "İndirmek",
+      "APPLY": "Uygula"
+    },
+    "MEMBERROLES": {
+      "IAM_OWNER": "Tüm kuruluşlar da dahil olmak üzere tüm örnek üzerinde kontrol sahibidir",
+      "IAM_OWNER_VIEWER": "Tüm kuruluşlar da dahil olmak üzere tüm örneği inceleme iznine sahiptir",
+      "IAM_ORG_MANAGER": "Kuruluş oluşturma ve yönetme iznine sahiptir",
+      "IAM_USER_MANAGER": "Kullanıcı oluşturma ve yönetme izni var",
+      "IAM_ADMIN_IMPERSONATOR": "Tüm kuruluşlardaki yönetici ve son kullanıcıların kimliğine bürünme iznine sahiptir",
+      "IAM_END_USER_IMPERSONATOR": "Tüm kuruluşlardaki son kullanıcıların kimliğine bürünme iznine sahiptir",
+      "ORG_OWNER": "Tüm organizasyon üzerinde izni var",
+      "ORG_USER_MANAGER": "Kuruluşun kullanıcılarını oluşturma ve yönetme izni var",
+      "ORG_OWNER_VIEWER": "Tüm organizasyonu inceleme izni var",
+      "ORG_USER_PERMISSION_EDITOR": "Kullanıcı izinlerini yönetme izni var",
+      "ORG_PROJECT_PERMISSION_EDITOR": "Proje hibelerini yönetme izni var",
+      "ORG_PROJECT_CREATOR": "Kendi projelerini ve temel ayarlarını oluşturma iznine sahiptir",
+      "ORG_ADMIN_IMPERSONATOR": "Kuruluştaki yönetici ve son kullanıcıların kimliğine bürünme izni var",
+      "ORG_END_USER_IMPERSONATOR": "Kuruluştaki son kullanıcıların kimliğine bürünme izni var",
+      "PROJECT_OWNER": "Tüm proje üzerinde izni var",
+      "PROJECT_OWNER_VIEWER": "Projenin tamamını inceleme izni var",
+      "PROJECT_OWNER_GLOBAL": "Tüm proje üzerinde izni var",
+      "PROJECT_OWNER_VIEWER_GLOBAL": "Projenin tamamını inceleme izni var",
+      "PROJECT_GRANT_OWNER": "Proje hibesini yönetme izni var",
+      "PROJECT_GRANT_OWNER_VIEWER": "Proje hibesini inceleme izni var"
+    },
+    "OVERLAYS": {
+      "ORGSWITCHER": {
+        "TEXT": "Konsoldaki tüm organizasyon ayarları ve tablolar seçilen bir organizasyonu temel alır. "
+      },
+      "INSTANCE": {
+        "TEXT": "Varsayılan ayarlara ulaşmak için burayı tıklayın. "
+      },
+      "PROFILE": {
+        "TEXT": "Burada kullanıcı hesaplarınız arasında geçiş yapabilir, oturumlarınızı ve profilinizi yönetebilirsiniz."
+      },
+      "NAV": {
+        "TEXT": "Bu gezinme yukarıda seçtiğiniz kuruluşa veya örneğinize göre değişir"
+      },
+      "CONTEXTCHANGED": {
+        "TEXT": "Organizasyon bağlamı değişti."
+      },
+      "SWITCHEDTOINSTANCE": {
+        "TEXT": "Görünüm sadece örnek olarak değiştirildi!"
+      }
+    },
+    "FILTER": {
+      "TITLE": "Filtre",
+      "STATE": "Durum",
+      "DISPLAYNAME": "Kullanıcı Görünen Adı",
+      "EMAIL": "E-posta",
+      "USERNAME": "Kullanıcı adı",
+      "ORGNAME": "Kuruluş Adı",
+      "PRIMARYDOMAIN": "Birincil Etki Alanı",
+      "PROJECTNAME": "Proje Adı",
+      "RESOURCEOWNER": "Kaynak Sahibi",
+      "METHODS": {
+        "1": "eşittir",
+        "5": "içerir",
+        "7": "ile biter"
+      }
+    },
+    "KEYBOARDSHORTCUTS": {
+      "TITLE": "Klavye Kısayolları",
+      "UNDERORGCONTEXT": "Organizasyon sayfalarında",
+      "SIDEWIDE": "Site genelinde kısayollar",
+      "SHORTCUTS": {
+        "HOME": "<strong>G</strong>o'ya <strong>H</strong>om",
+        "INSTANCE": "<strong>G</strong>o'ya <strong>BEN</strong>misal",
+        "ORG": "<strong>G</strong>o'ya <strong>O</strong>organizasyon",
+        "ORGSETTINGS": "<strong>G</strong>o Organizasyona <strong>S</strong>ayarlar",
+        "ORGSWITCHER": "Organizasyonu Değiştir",
+        "ME": "Kendi profiline git",
+        "PROJECTS": "<strong>G</strong>o'ya <strong>P</strong>projeler",
+        "USERS": "<strong>G</strong>o'ya <strong>sen</strong>hizmetçiler",
+        "USERGRANTS": "<strong>G</strong>o'ya <strong>A</strong>yetkiler",
+        "ACTIONS": "<strong>G</strong>o Eylemlere ve <strong>F</strong>düşükler",
+        "DOMAINS": "<strong>G</strong>o'ya <strong>D</strong>işaretler"
+      }
+    },
+    "RESOURCEID": "Kaynak Kimliği",
+    "NAME": "İsim",
+    "VERSION": "Sürüm",
+    "TABLE": {
+      "NOROWS": "Veri yok"
+    },
+    "ERRORS": {
+      "REQUIRED": "Lütfen bu alanı doldurunuz.",
+      "ATLEASTONE": "En az bir değer sağlayın.",
+      "TOKENINVALID": {
+        "TITLE": "Yetkilendirme belirtecinizin süresi doldu.",
+        "DESCRIPTION": "Tekrar giriş yapmak için aşağıdaki butona tıklayın."
+      },
+      "EXHAUSTED": {
+        "TITLE": "Örneğiniz engellendi.",
+        "DESCRIPTION": "ZITADEL örneği yöneticinizden aboneliği güncellemesini isteyin."
+      },
+      "INVALID_FORMAT": "Biçimlendirme geçersiz.",
+      "NOTANEMAIL": "Verilen değer bir e-posta adresi değildir.",
+      "MINLENGTH": "En azından olmalı {{requiredLength}} karakterler uzun.",
+      "MAXLENGTH": "Şundan az olmalı {{requiredLength}} karakterler.",
+      "UPPERCASEMISSING": "Büyük harf içermelidir.",
+      "LOWERCASEMISSING": "Küçük harf içermelidir.",
+      "SYMBOLERROR": "Bir sembol veya noktalama işareti içermelidir.",
+      "NUMBERERROR": "Bir rakam içermelidir.",
+      "PWNOTEQUAL": "Verilen şifreler eşleşmiyor.",
+      "PHONE": "Telefon numarası + ile başlamalıdır."
+    },
+    "USER": {
+      "SETTINGS": {
+        "TITLE": "Ayarlar",
+        "GENERAL": "Genel",
+        "IDP": "Kimlik Sağlayıcılar",
+        "SECURITY": "Şifre ve Güvenlik",
+        "KEYS": "Anahtarlar",
+        "PAT": "Kişisel Erişim Jetonları",
+        "USERGRANTS": "Yetkiler",
+        "MEMBERSHIPS": "Üyelikler",
+        "METADATA": "Meta veriler"
+      },
+      "TITLE": "Kişisel Bilgiler",
+      "DESCRIPTION": "Bilgilerinizi ve güvenlik ayarlarınızı yönetin.",
+      "PAGES": {
+        "TITLE": "Kullanıcı",
+        "DETAIL": "Detay",
+        "CREATE": "Yaratmak",
+        "MY": "Bilgilerim",
+        "LOGINNAMES": "Giriş adları",
+        "LOGINMETHODS": "Giriş yöntemleri",
+        "LOGINNAMESDESC": "Bunlar oturum açma adlarınızdır:",
+        "NOUSER": "İlişkilendirilmiş kullanıcı yok.",
+        "REACTIVATE": "Yeniden etkinleştir",
+        "DEACTIVATE": "Devre dışı bırak",
+        "FILTER": "Filtre",
+        "STATE": "Durum",
+        "DELETE": "Kullanıcıyı Sil",
+        "UNLOCK": "Kullanıcının Kilidini Aç",
+        "GENERATESECRET": "İstemci Sırrı Oluştur",
+        "REMOVESECRET": "İstemci Sırrını Kaldır",
+        "LOCKEDDESCRIPTION": "Bu kullanıcı, maksimum oturum açma deneme sayısını aştığı için kilitlendi ve tekrar kullanılabilmesi için kilidin açılması gerekiyor.",
+        "DELETEACCOUNT": "Hesabı Sil",
+        "DELETEACCOUNT_DESC": "Bu eylemi gerçekleştirirseniz oturumunuz kapatılacak ve artık hesabınıza erişemeyeceksiniz. ",
+        "DELETEACCOUNT_BTN": "Hesabı Sil",
+        "DELETEACCOUNT_SUCCESS": "Hesap başarıyla silindi!"
+      },
+      "DETAILS": {
+        "DATECREATED": "Oluşturuldu",
+        "DATECHANGED": "Değiştirildi"
+      },
+      "DIALOG": {
+        "DELETE_TITLE": "Kullanıcıyı Sil",
+        "DELETE_SELF_TITLE": "Hesabı Sil",
+        "DELETE_DESCRIPTION": "Bir kullanıcıyı kalıcı olarak silmek üzeresiniz. ",
+        "DELETE_SELF_DESCRIPTION": "Kişisel hesabınızı kalıcı olarak silmek üzeresiniz. ",
+        "DELETE_AUTH_DESCRIPTION": "Kişisel hesabınızı kalıcı olarak silmek üzeresiniz. ",
+        "TYPEUSERNAME": "Tip '{{value}}Kullanıcıyı onaylamak ve silmek için.",
+        "USERNAME": "Giriş adı",
+        "DELETE_BTN": "Kalıcı olarak sil"
+      },
+      "SENDEMAILDIALOG": {
+        "TITLE": "E-posta Bildirimi Gönder",
+        "DESCRIPTION": "Mevcut e-posta adresine bildirim göndermek veya alandaki e-posta adresini değiştirmek için aşağıdaki butona tıklayın.",
+        "NEWEMAIL": "Yeni e-posta adresi"
+      },
+      "SECRETDIALOG": {
+        "CLIENTSECRET": "İstemci Gizli Anahtarı",
+        "CLIENTSECRET_DESCRIPTION": "İletişim kutusu kapatıldığında kaybolacağından istemcinizi güvenli bir yerde saklayın."
+      },
+      "TABLE": {
+        "DEACTIVATE": "Devre dışı bırak",
+        "ACTIVATE": "Etkinleştir",
+        "CHANGEDATE": "Son Değiştirilme",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "FILTER": {
+          "0": "Görünen Ad için Filtre",
+          "1": "Kullanıcı Adı Filtresi",
+          "2": "Görünen Ad için filtre",
+          "3": "Kullanıcı adı için filtre",
+          "4": "E-posta için filtre",
+          "5": "Görünen Ad için filtre",
+          "10": "kuruluş adı filtresi",
+          "12": "proje adı için filtre"
+        },
+        "EMPTY": "Giriş yok"
+      },
+      "PASSWORDLESS": {
+        "SEND": "Kayıt bağlantısını gönder",
+        "TABLETYPE": "Tip",
+        "TABLESTATE": "Durum",
+        "NAME": "İsim",
+        "EMPTY": "Cihaz ayarlanmadı",
+        "TITLE": "Parolasız Kimlik Doğrulama",
+        "DESCRIPTION": "ZITADEL'de şifresiz oturum açmak için WebAuthn tabanlı Kimlik Doğrulama Yöntemleri ekleyin.",
+        "MANAGE_DESCRIPTION": "Kullanıcılarınızın ikinci faktör yöntemlerini yönetin.",
+        "U2F": "Yöntem ekle",
+        "U2F_DIALOG_TITLE": "Kimlik doğrulayıcıyı doğrula",
+        "U2F_DIALOG_DESCRIPTION": "Kullandığınız şifresiz Giriş için bir ad girin",
+        "U2F_SUCCESS": "Parolasız Kimlik Doğrulama başarıyla oluşturuldu!",
+        "U2F_ERROR": "Kurulum sırasında bir hata oluştu!",
+        "U2F_NAME": "Kimlik Doğrulayıcı Adı",
+        "TYPE": {
+          "0": "MFA tanımlanmadı",
+          "1": "Tek Kullanımlık Şifre (OTP)",
+          "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri"
+        },
+        "STATE": {
+          "0": "Eyalet Yok",
+          "1": "Hazır Değil",
+          "2": "Hazır",
+          "3": "Silindi"
+        },
+        "DIALOG": {
+          "DELETE_TITLE": "Parolasız Kimlik Doğrulama Yöntemini Kaldır",
+          "DELETE_DESCRIPTION": "Parolasız bir Kimlik Doğrulama yöntemini silmek üzeresiniz. ",
+          "ADD_TITLE": "Parolasız Kimlik Doğrulama",
+          "ADD_DESCRIPTION": "Parolasız bir kimlik doğrulama yöntemi oluşturmak için mevcut seçeneklerden birini seçin.",
+          "SEND_DESCRIPTION": "Kendinize e-posta adresinize bir kayıt bağlantısı gönderin.",
+          "SEND": "Kayıt bağlantısını gönder",
+          "SENT": "E-posta başarıyla teslim edildi. ",
+          "QRCODE_DESCRIPTION": "Başka bir cihazla taramak için QR kodu oluşturun.",
+          "QRCODE": "QR kodu oluştur",
+          "QRCODE_SCAN": "Cihazınızda kuruluma devam etmek için bu QR kodunu tarayın.",
+          "NEW_DESCRIPTION": "Parolasız kurulumunu yapmak için bu cihazı kullanın.",
+          "NEW": "Yeni Ekle"
+        }
+      },
+      "MFA": {
+        "TABLETYPE": "Tip",
+        "TABLESTATE": "Durum",
+        "NAME": "İsim",
+        "EMPTY": "Ek faktör yok",
+        "TITLE": "Çok Faktörlü Kimlik Doğrulama",
+        "DESCRIPTION": "Hesabınız için en iyi güvenliği sağlamak için ikinci bir faktör ekleyin.",
+        "MANAGE_DESCRIPTION": "Kullanıcılarınızın ikinci faktör yöntemlerini yönetin.",
+        "ADD": "Faktör Ekle",
+        "OTP": "TOTP için Kimlik Doğrulayıcı Uygulaması (Zamana Dayalı Tek Kullanımlık Şifre)",
+        "OTP_DIALOG_TITLE": "OTP'yi ekle",
+        "OTP_DIALOG_DESCRIPTION": "QR kodunu bir kimlik doğrulama uygulamasıyla tarayın ve OTP yöntemini doğrulayıp etkinleştirmek için aşağıdaki kodu girin.",
+        "U2F": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri",
+        "U2F_DIALOG_TITLE": "Faktörü Doğrula",
+        "U2F_DIALOG_DESCRIPTION": "Kullanılmış evrensel Multifaktörünüz için bir ad girin.",
+        "U2F_SUCCESS": "Faktör başarıyla eklendi!",
+        "U2F_ERROR": "Kurulum sırasında bir hata oluştu!",
+        "U2F_NAME": "Kimlik Doğrulayıcı Adı",
+        "OTPSMS": "SMS ile OTP (Tek Kullanımlık Şifre)",
+        "OTPEMAIL": "E-posta ile OTP (Tek Kullanımlık Şifre)",
+        "SETUPOTPSMSDESCRIPTION": "Bu telefon numarasını OTP (Tek Kullanımlık Şifre) ikinci faktörü olarak ayarlamak istiyor musunuz?",
+        "OTPSMSSUCCESS": "OTP faktörü başarıyla kuruldu.",
+        "OTPSMSPHONEMUSTBEVERIFIED": "Bu yöntemi kullanabilmeniz için telefonunuzun doğrulanması gerekmektedir.",
+        "OTPEMAILSUCCESS": "OTP faktörü başarıyla kuruldu.",
+        "TYPE": {
+          "0": "MFA tanımlanmadı",
+          "1": "Tek Kullanımlık Şifre (OTP)",
+          "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri"
+        },
+        "STATE": {
+          "0": "Eyalet Yok",
+          "1": "Hazır Değil",
+          "2": "Hazır",
+          "3": "Silindi"
+        },
+        "DIALOG": {
+          "MFA_DELETE_TITLE": "İkinci Faktörü Kaldır",
+          "MFA_DELETE_DESCRIPTION": "İkinci bir faktörü silmek üzeresiniz. ",
+          "ADD_MFA_TITLE": "İkinci Faktör Ekle",
+          "ADD_MFA_DESCRIPTION": "Aşağıdaki seçeneklerden birini seçin."
+        }
+      },
+      "EXTERNALIDP": {
+        "TITLE": "Harici Kimlik Sağlayıcıları",
+        "DESC": "",
+        "IDPCONFIGID": "IDP Yapılandırma Kimliği",
+        "IDPNAME": "IDP Adı",
+        "USERDISPLAYNAME": "Harici Ad",
+        "EXTERNALUSERID": "Harici Kullanıcı Kimliği",
+        "EMPTY": "Harici IDP bulunamadı",
+        "DIALOG": {
+          "DELETE_TITLE": "IDP'yi kaldır",
+          "DELETE_DESCRIPTION": "Bir kullanıcıdan Kimlik Sağlayıcıyı silmek üzeresiniz. "
+        }
+      },
+      "CREATE": {
+        "TITLE": "Yeni Kullanıcı Oluştur",
+        "DESCRIPTION": "Lütfen gerekli bilgileri sağlayın.",
+        "NAMEANDEMAILSECTION": "Ad ve E-posta",
+        "GENDERLANGSECTION": "Cinsiyet ve Dil",
+        "PHONESECTION": "Telefon numaraları",
+        "PASSWORDSECTION": "İlk Şifre",
+        "ADDRESSANDPHONESECTION": "Telefon numarası",
+        "INITMAILDESCRIPTION": "Her iki seçenek de seçilirse başlatma için e-posta gönderilmez. "
+      },
+      "CODEDIALOG": {
+        "TITLE": "Telefon Numarasını Doğrulayın",
+        "DESCRIPTION": "Telefon numaranızı doğrulamak için kısa mesajla aldığınız kodu girin.",
+        "CODE": "Kod"
+      },
+      "DATA": {
+        "STATE": "Durum",
+        "STATE0": "Bilinmiyor",
+        "STATE1": "Aktif",
+        "STATE2": "Etkin değil",
+        "STATE3": "Silindi",
+        "STATE4": "Kilitli",
+        "STATE5": "Askıya alınmış",
+        "STATE6": "İlk"
+      },
+      "PROFILE": {
+        "TITLE": "Profil",
+        "EMAIL": "E-posta",
+        "PHONE": "Telefon numarası",
+        "PHONE_HINT": "+ sembolünü ve ardından arayan ülke kodunu kullanın veya açılır menüden ülkeyi seçin ve son olarak telefon numarasını girin",
+        "USERNAME": "Kullanıcı adı",
+        "CHANGEUSERNAME": "değiştirmek",
+        "CHANGEUSERNAME_TITLE": "Kullanıcı adını değiştir",
+        "CHANGEUSERNAME_DESC": "Yeni adı aşağıdaki alana girin.",
+        "FIRSTNAME": "İsim",
+        "LASTNAME": "Aile Adı",
+        "NICKNAME": "Takma ad",
+        "DISPLAYNAME": "Ekran adı",
+        "PREFERREDLOGINNAME": "Tercih edilen oturum açma adı",
+        "PREFERRED_LANGUAGE": "Dil",
+        "GENDER": "Cinsiyet",
+        "PASSWORD": "Şifre",
+        "AVATAR": {
+          "UPLOADTITLE": "Profil Resminizi Yükleyin",
+          "UPLOADBTN": "Dosya seç",
+          "UPLOAD": "Yüklemek",
+          "CURRENT": "Mevcut Resim",
+          "PREVIEW": "Önizleme",
+          "DELETESUCCESS": "Başarıyla silindi!",
+          "CROPPERERROR": "Dosyanız yüklenirken bir hata oluştu. "
+        },
+        "COUNTRY": "Ülke"
+      },
+      "MACHINE": {
+        "TITLE": "Hizmet Kullanıcı Ayrıntıları",
+        "USERNAME": "Kullanıcı adı",
+        "NAME": "İsim",
+        "DESCRIPTION": "Tanım",
+        "KEYSTITLE": "Anahtarlar",
+        "KEYSDESC": "Anahtarlarınızı tanımlayın ve isteğe bağlı bir son kullanma tarihi ekleyin.",
+        "TOKENSTITLE": "Kişisel Erişim Jetonları",
+        "TOKENSDESC": "Kişisel erişim belirteçleri sıradan OAuth erişim belirteçleri gibi çalışır.",
+        "ID": "Anahtar Kimliği",
+        "TYPE": "Tip",
+        "EXPIRATIONDATE": "Son kullanma tarihi",
+        "CHOOSEDATEAFTER": "Şu tarihten sonra geçerli bir son kullanma tarihi girin:",
+        "CHOOSEEXPIRY": "Bir son kullanma tarihi seçin",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "KEYDETAILS": "Önemli Ayrıntılar",
+        "ACCESSTOKENTYPE": "Erişim Jetonu Türü",
+        "ACCESSTOKENTYPES": {
+          "0": "Taşıyıcı",
+          "1": "JWT"
+        },
+        "ADD": {
+          "TITLE": "Anahtar Ekle",
+          "DESCRIPTION": "Anahtar türünüzü seçin ve isteğe bağlı bir son kullanma tarihi seçin."
+        },
+        "ADDED": {
+          "TITLE": "Anahtar oluşturuldu",
+          "DESCRIPTION": "Bu iletişim kutusunu kapattıktan sonra görünmeyeceği için anahtarı indirin!"
+        },
+        "KEYTYPES": {
+          "1": "JSON"
+        },
+        "DIALOG": {
+          "DELETE_KEY": {
+            "TITLE": "Anahtarı Sil",
+            "DESCRIPTION": "Seçilen anahtarı silmek istiyor musunuz? "
+          }
+        }
+      },
+      "PASSWORD": {
+        "TITLE": "Şifre",
+        "LABEL": "Güvenli bir şifre hesabın korunmasına yardımcı olur",
+        "DESCRIPTION": "Aşağıdaki politikaya göre yeni şifreyi girin.",
+        "OLD": "Mevcut Şifre",
+        "NEW": "Yeni Şifre",
+        "CONFIRM": "Yeni Şifreyi Onayla",
+        "NEWINITIAL": "Şifre",
+        "CONFIRMINITIAL": "Şifreyi Onayla",
+        "RESET": "Mevcut Şifreyi Sıfırla",
+        "SET": "Yeni Şifre Belirle",
+        "RESENDNOTIFICATION": "Şifre Sıfırlama Bağlantısını Gönder",
+        "REQUIRED": "Gerekli alanların bazıları eksik.",
+        "MINLENGTHERROR": "En azından olmalı {{value}} karakterler uzun.",
+        "MAXLENGTHERROR": "Şundan az olmalı {{value}} karakterler."
+      },
+      "ID": "İD",
+      "EMAIL": "E-posta",
+      "PHONE": "Telefon numarası",
+      "PHONEEMPTY": "Tanımlanmış telefon numarası yok",
+      "PHONEVERIFIED": "Telefon numarası doğrulandı.",
+      "EMAILVERIFIED": "E-posta doğrulandı",
+      "NOTVERIFIED": "doğrulanmadı",
+      "PREFERRED_LOGINNAME": "Tercih Edilen Giriş Adı",
+      "ISINITIAL": "Kullanıcı henüz aktif değil.",
+      "LOGINMETHODS": {
+        "TITLE": "İletişim Bilgileri",
+        "DESCRIPTION": "Sağlanan bilgiler size şifre sıfırlama e-postaları gibi önemli bilgilerin gönderilmesi için kullanılır.",
+        "EMAIL": {
+          "TITLE": "E-posta",
+          "VALID": "doğrulanmış",
+          "ISVERIFIED": "E-posta Doğrulandı",
+          "ISVERIFIEDDESC": "E-postanın doğrulanmış olduğu belirtilirse e-posta doğrulama isteği yapılmayacaktır.",
+          "RESEND": "Doğrulama E-postasını Yeniden Gönder",
+          "EDITTITLE": "E-postayı Değiştir",
+          "EDITDESC": "Yeni e-postayı aşağıdaki alana girin."
+        },
+        "PHONE": {
+          "TITLE": "Telefon",
+          "VALID": "doğrulanmış",
+          "RESEND": "Doğrulama Kısa Mesajını Yeniden Gönder",
+          "EDITTITLE": "Numarayı değiştir",
+          "EDITVALUE": "Telefon numarası",
+          "EDITDESC": "Yeni telefon numarasını aşağıdaki alana girin.",
+          "DELETETITLE": "Telefon numarasını sil",
+          "DELETEDESC": "Gerçekten telefon numarasını silmek istiyor musun?",
+          "OTPSMSREMOVALWARNING": "Bu hesap bu telefon numarasını ikinci faktör olarak kullanıyor. "
+        },
+        "RESENDCODE": "Kodu Yeniden Gönder",
+        "ENTERCODE": "Doğrulamak",
+        "ENTERCODE_DESC": "Kodu Doğrula"
+      },
+      "GRANTS": {
+        "TITLE": "Kullanıcı İzinleri",
+        "DESCRIPTION": "Bu kullanıcıya belirli projelere erişim izni verin",
+        "CREATE": {
+          "TITLE": "Kullanıcı Yetkisi Oluştur",
+          "DESCRIPTION": "Organizasyonu, projeyi ve ilgili proje rollerini arayın."
+        },
+        "PROJECTNAME": "Proje Adı",
+        "PROJECT-OWNED": "Proje",
+        "PROJECT-GRANTED": "Verilen proje",
+        "FILTER": {
+          "0": "kullanıcı için filtre",
+          "1": "etki alanı için filtre",
+          "2": "proje adı için filtre",
+          "3": "rol adı için filtre"
+        }
+      },
+      "STATE": {
+        "0": "Bilinmiyor",
+        "1": "Aktif",
+        "2": "Etkin değil",
+        "3": "Silindi",
+        "4": "Kilitli",
+        "5": "Askıya alınmış",
+        "6": "İlk"
+      },
+      "SEARCH": {
+        "ADDITIONAL": "Oturum açma adı (mevcut kuruluş)",
+        "ADDITIONAL-EXTERNAL": "Oturum açma adı (harici kuruluş)"
+      },
+      "TARGET": {
+        "SELF": "Başka bir kuruluşun kullanıcısına izin vermek istiyorsanız",
+        "EXTERNAL": "Kuruluşunuzun bir kullanıcısına izin vermek için",
+        "CLICKHERE": "buraya tıklayın"
+      },
+      "SIGNEDOUT": "Oturumunuz kapatıldı. ",
+      "SIGNEDOUT_BTN": "Kayıt olmak",
+      "EDITACCOUNT": "Hesabı Düzenle",
+      "ADDACCOUNT": "Başka Bir Hesapla Giriş Yapın",
+      "RESENDINITIALEMAIL": "Etkinleştirme postasını yeniden gönder",
+      "RESENDEMAILNOTIFICATION": "E-posta bildirimini yeniden gönder",
+      "TOAST": {
+        "CREATED": "Kullanıcı başarıyla oluşturuldu.",
+        "SAVED": "Profil başarıyla kaydedildi.",
+        "USERNAMECHANGED": "Kullanıcı adı değiştirildi.",
+        "EMAILSAVED": "E-posta başarıyla kaydedildi.",
+        "INITEMAILSENT": "Başlatma postası gönderildi.",
+        "PHONESAVED": "Telefon başarıyla kaydedildi.",
+        "PHONEREMOVED": "Telefon kaldırıldı.",
+        "PHONEVERIFIED": "Telefon başarıyla doğrulandı.",
+        "PHONEVERIFICATIONSENT": "Telefon doğrulama kodu gönderildi.",
+        "EMAILVERIFICATIONSENT": "E-posta doğrulama kodu gönderildi.",
+        "OTPREMOVED": "OTP kaldırıldı.",
+        "U2FREMOVED": "Faktör kaldırıldı.",
+        "PASSWORDLESSREMOVED": "Şifresiz kaldırıldı.",
+        "INITIALPASSWORDSET": "Başlangıç ​​şifresi belirlendi.",
+        "PASSWORDNOTIFICATIONSENT": "Şifre değişikliği bildirimi gönderildi.",
+        "PASSWORDCHANGED": "Şifre başarıyla değiştirildi.",
+        "REACTIVATED": "Kullanıcı yeniden etkinleştirildi.",
+        "DEACTIVATED": "Kullanıcı devre dışı bırakıldı.",
+        "SELECTEDREACTIVATED": "Seçilen kullanıcılar yeniden etkinleştirildi.",
+        "SELECTEDDEACTIVATED": "Seçilen kullanıcılar devre dışı bırakıldı.",
+        "SELECTEDKEYSDELETED": "Seçilen anahtarlar silindi.",
+        "KEYADDED": "Anahtar eklendi!",
+        "MACHINEADDED": "Hizmet Kullanıcısı oluşturuldu!",
+        "DELETED": "Kullanıcı başarıyla silindi!",
+        "UNLOCKED": "Kullanıcının kilidi başarıyla açıldı!",
+        "PASSWORDLESSREGISTRATIONSENT": "Kayıt Bağlantısı başarıyla gönderildi.",
+        "SECRETGENERATED": "Gizli başarıyla oluşturuldu!",
+        "SECRETREMOVED": "Gizli başarıyla kaldırıldı!"
+      },
+      "MEMBERSHIPS": {
+        "TITLE": "ZITADEL Yönetici Rolleri",
+        "DESCRIPTION": "Bunların hepsi kullanıcının üye bağışlarıdır. ",
+        "ORGCONTEXT": "Şu anda seçili kuruluşla ilgili tüm kuruluşları ve projeleri görürsünüz.",
+        "USERCONTEXT": "Yetkili olduğunuz tüm organizasyonları ve projeleri görürsünüz. ",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "CHANGEDATE": "Son Değiştirilme",
+        "DISPLAYNAME": "Ekran adı",
+        "REMOVE": "Kaldırmak",
+        "TYPE": "Tip",
+        "ORGID": "Kuruluş Kimliği",
+        "UPDATED": "Üyelik güncellendi.",
+        "NOPERMISSIONTOEDIT": "Rolleri düzenlemek için gerekli izinlere sahip değilsiniz!",
+        "TYPES": {
+          "UNKNOWN": "Bilinmiyor",
+          "ORG": "Organizasyon",
+          "PROJECT": "Proje",
+          "GRANTEDPROJECT": "Hibe Edilen Proje"
+        }
+      },
+      "PERSONALACCESSTOKEN": {
+        "ID": "İD",
+        "TOKEN": "Jeton",
+        "ADD": {
+          "TITLE": "Yeni Kişisel Erişim Belirteci oluştur",
+          "DESCRIPTION": "Belirteç için özel bir son kullanma tarihi tanımlayın.",
+          "CHOOSEEXPIRY": "Bir son kullanma tarihi seçin",
+          "CHOOSEDATEAFTER": "Şu tarihten sonra geçerli bir son kullanma tarihi girin:"
+        },
+        "ADDED": {
+          "TITLE": "Kişisel Erişim Jetonu",
+          "DESCRIPTION": "Kişisel erişim belirtecinizi kopyaladığınızdan emin olun. "
+        },
+        "DELETE": {
+          "TITLE": "Jetonu Sil",
+          "DESCRIPTION": "Kişisel erişim belirtecini silmek üzeresiniz. "
+        },
+        "DELETED": "Jeton başarıyla silindi."
+      }
+    },
+    "METADATA": {
+      "TITLE": "Meta veriler",
+      "KEY": "Anahtar",
+      "VALUE": "Değer",
+      "ADD": "Yeni Giriş",
+      "SAVE": "Kaydetmek",
+      "EMPTY": "Meta veri yok",
+      "SETSUCCESS": "Öğe başarıyla kaydedildi",
+      "REMOVESUCCESS": "Öğe başarıyla silindi"
+    },
+    "FLOWS": {
+      "ID": "İD",
+      "NAME": "İsim",
+      "STATE": "Durum",
+      "STATES": {
+        "0": "durum yok",
+        "1": "aktif değil",
+        "2": "aktif"
+      },
+      "ADDTRIGGER": "Tetikleyici ekle",
+      "FLOWCHANGED": "Akış başarıyla değiştirildi",
+      "FLOWCLEARED": "Akış başarıyla sıfırlandı",
+      "TIMEOUT": "Zaman aşımı",
+      "TIMEOUTINSEC": "Saniye cinsinden zaman aşımı",
+      "ALLOWEDTOFAIL": "Başarısızlığa İzin Verildi",
+      "ALLOWEDTOFAILWARN": {
+        "TITLE": "Uyarı",
+        "DESCRIPTION": "Bu ayarı devre dışı bırakırsanız kuruluşunuzdaki kullanıcıların oturum açamamasına neden olabilir. Ayrıca, işlemi devre dışı bırakmak için artık konsola erişemezsiniz. "
+      },
+      "SCRIPT": "Senaryo",
+      "FLOWTYPE": "Akış Tipi",
+      "TRIGGERTYPE": "Tetikleyici Türü",
+      "ACTIONS": "Eylemler",
+      "ACTIONSMAX": "Seviyenize bağlı olarak sınırlı sayıda Eyleminiz mevcuttur ({{value}}). ",
+      "DIALOG": {
+        "ADD": {
+          "TITLE": "Eylem Oluştur"
+        },
+        "UPDATE": {
+          "TITLE": "Eylemi Güncelle"
+        },
+        "DELETEACTION": {
+          "TITLE": "Eylem Silinsin mi?",
+          "DESCRIPTION": "Bir eylemi silmek üzeresiniz. ",
+          "DELETE_SUCCESS": "İşlem başarıyla silindi."
+        },
+        "CLEAR": {
+          "TITLE": "Akışı temizle?",
+          "DESCRIPTION": "Akışı, tetikleyicileri ve eylemleriyle birlikte sıfırlamak üzeresiniz. "
+        },
+        "REMOVEACTIONSLIST": {
+          "TITLE": "Seçili Eylemler silinsin mi?",
+          "DESCRIPTION": "Seçilen eylemleri akıştan silmek istediğinizden emin misiniz?"
+        },
+        "ABOUTNAME": "Javascript'teki eylemin adı ile işlevin adı aynı olmalıdır"
+      },
+      "TOAST": {
+        "ACTIONSSET": "Eylemler ayarlandı",
+        "ACTIONREACTIVATED": "İşlemler başarıyla yeniden etkinleştirildi",
+        "ACTIONDEACTIVATED": "İşlemler başarıyla devre dışı bırakıldı"
+      }
+    },
+    "IAM": {
+      "POLICIES": {
+        "TITLE": "Sistem Politikaları ve Erişim Ayarları",
+        "DESCRIPTION": "Küresel Politikalarınızı ve Yönetim Erişimi Ayarlarınızı yönetin."
+      },
+      "EVENTSTORE": {
+        "TITLE": "IAM Depolama Yönetimi",
+        "DESCRIPTION": "ZITADEL görünümlerinizi ve başarısız olaylarınızı yönetin."
+      },
+      "MEMBER": {
+        "TITLE": "Yöneticiler",
+        "DESCRIPTION": "Bu Yöneticilerin örneğinizde değişiklik yapmasına izin verilir."
+      },
+      "PAGES": {
+        "STATE": "Durum",
+        "DOMAINLIST": "Özel Etki Alanları"
+      },
+      "STATE": {
+        "0": "belirtilmemiş",
+        "1": "Oluşturma",
+        "2": "Koşma",
+        "3": "Durdurmak",
+        "4": "Durduruldu"
+      },
+      "VIEWS": {
+        "VIEWNAME": "İsim",
+        "DATABASE": "Veritabanı",
+        "SEQUENCE": "Sekans",
+        "EVENTTIMESTAMP": "Zaman damgası",
+        "LASTSPOOL": "Başarılı biriktirme",
+        "ACTIONS": "Eylemler",
+        "CLEAR": "Temizlemek",
+        "CLEARED": "Görünüm başarıyla temizlendi!",
+        "DIALOG": {
+          "VIEW_CLEAR_TITLE": "Görünümü Temizle",
+          "VIEW_CLEAR_DESCRIPTION": "Bir görünümü temizlemek üzeresiniz. "
+        }
+      },
+      "FAILEDEVENTS": {
+        "VIEWNAME": "İsim",
+        "DATABASE": "Veritabanı",
+        "FAILEDSEQUENCE": "Başarısız Sıra",
+        "FAILURECOUNT": "Arıza Sayısı",
+        "LASTFAILED": "En son şu tarihte başarısız oldu:",
+        "ERRORMESSAGE": "Hata Mesajı",
+        "ACTIONS": "Eylemler",
+        "DELETE": "Kaldırmak",
+        "DELETESUCCESS": "Başarısız olaylar kaldırıldı."
+      },
+      "EVENTS": {
+        "EDITOR": "Editör",
+        "EDITORID": "Düzenleyici Kimliği",
+        "AGGREGATE": "Agrega",
+        "AGGREGATEID": "Toplu Kimlik",
+        "AGGREGATETYPE": "Agrega Türü",
+        "RESOURCEOWNER": "Kaynak Sahibi",
+        "SEQUENCE": "Sekans",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "TYPE": "Tip",
+        "PAYLOAD": "Yük",
+        "FILTERS": {
+          "BTN": "Filtre",
+          "USER": {
+            "IDLABEL": "İD",
+            "CHECKBOX": "Düzenleyiciye göre filtrele"
+          },
+          "AGGREGATE": {
+            "TYPELABEL": "Agrega Türü",
+            "IDLABEL": "İD",
+            "CHECKBOX": "Toplama'ya göre filtrele"
+          },
+          "TYPE": {
+            "TYPELABEL": "Tip",
+            "CHECKBOX": "Türe göre filtrele"
+          },
+          "RESOURCEOWNER": {
+            "LABEL": "İD",
+            "CHECKBOX": "Kaynak Sahibine göre filtrele"
+          },
+          "SEQUENCE": {
+            "LABEL": "Sekans",
+            "CHECKBOX": "Sıraya Göre Filtrele"
+          },
+          "SORT": "Düzenlemek",
+          "ASC": "Artan",
+          "DESC": "Azalan",
+          "CREATIONDATE": {
+            "RADIO_FROM": "İtibaren",
+            "RADIO_RANGE": "Menzil",
+            "LABEL_SINCE": "O zamandan beri",
+            "LABEL_UNTIL": "Değin"
+          },
+          "OTHER": "diğer",
+          "OTHERS": "diğerleri"
+        },
+        "DIALOG": {
+          "TITLE": "Etkinlik Detayı"
+        }
+      },
+      "TOAST": {
+        "MEMBERREMOVED": "Yönetici kaldırıldı.",
+        "MEMBERSADDED": "Yöneticiler eklendi.",
+        "MEMBERADDED": "Yönetici eklendi.",
+        "MEMBERCHANGED": "Yönetici değişti.",
+        "ROLEREMOVED": "Rol kaldırıldı.",
+        "ROLECHANGED": "Rol değişti.",
+        "REACTIVATED": "Yeniden etkinleştirildi",
+        "DEACTIVATED": "Devre dışı bırakıldı"
+      }
+    },
+    "ORG": {
+      "PAGES": {
+        "NAME": "İsim",
+        "ID": "İD",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "DATECHANGED": "Değiştirildi",
+        "FILTER": "Filtre",
+        "FILTERPLACEHOLDER": "Ad için filtreleyin",
+        "LIST": "Organizasyonlar",
+        "LISTDESCRIPTION": "Bir kuruluş seçin.",
+        "ACTIVE": "Aktif",
+        "CREATE": "Organizasyon Oluştur",
+        "DEACTIVATE": "Kuruluşu Devre Dışı Bırak",
+        "REACTIVATE": "Kuruluşu Yeniden Etkinleştir",
+        "NOPERMISSION": "Kuruluş ayarlarına erişme izniniz yok.",
+        "USERSELFACCOUNT": "Kişisel hesabınızı kuruluş sahibi olarak kullanın",
+        "ORGDETAIL_TITLE": "Yeni kuruluşunuzun adını ve etki alanını girin.",
+        "ORGDETAIL_TITLE_WITHOUT_DOMAIN": "Yeni kuruluşunuzun adını girin.",
+        "ORGDETAILUSER_TITLE": "Kuruluş Sahibini Yapılandır",
+        "DELETE": "Kuruluşu sil",
+        "DEFAULTLABEL": "Varsayılan",
+        "SETASDEFAULT": "Varsayılan organizasyon olarak ayarla",
+        "DEFAULTORGSET": "Varsayılan organizasyon başarıyla değiştirildi",
+        "RENAME": {
+          "ACTION": "Yeniden isimlendirmek",
+          "TITLE": "Kuruluşu Yeniden Adlandır",
+          "DESCRIPTION": "Kuruluşunuzun yeni adını girin",
+          "BTN": "Yeniden isimlendirmek"
+        },
+        "ORGDOMAIN": {
+          "TITLE": "Doğrulamak {{value}} mülkiyet",
+          "VERIFICATION": "Alanınızı manuel olarak doğrulamak için size iki yöntem sunuyoruz:",
+          "VERIFICATION_HTML": "-HTTP. ",
+          "VERIFICATION_DNS": "- DNS. ",
+          "VERIFICATION_DNS_DESC": "Eğer yönetirsen {{ value }} ve DNS kayıtlarınıza erişiminiz varsa, aşağıdaki değerlerle yeni bir TXT kaydı oluşturabilirsiniz:",
+          "VERIFICATION_DNS_HOST_LABEL": "Ev sahibi:",
+          "VERIFICATION_DNS_CHALLENGE_LABEL": "TXT kaydının değeri için bu kodu kullanın:",
+          "VERIFICATION_HTTP_DESC": "Web sitenizin barındırma hizmetine erişiminiz varsa, doğrulama dosyasını indirmeniz ve verilen URL'ye yüklemeniz yeterlidir.",
+          "VERIFICATION_HTTP_URL_LABEL": "Beklenen URL:",
+          "VERIFICATION_HTTP_FILE_LABEL": "Doğrulama dosyası:",
+          "VERIFICATION_SKIP": "Şimdilik doğrulamayı atlayıp kuruluşunuzu oluşturmaya devam edebilirsiniz ancak alanınızı kullanabilmeniz için bu adımın tamamlanması gerekiyor!",
+          "VERIFICATION_VALIDATION_DESC": "ZITADEL zaman zaman alan adınızın sahipliğini yeniden kontrol edeceğinden doğrulama kodunu silmeyin.",
+          "VERIFICATION_NEWTOKEN_TITLE": "Yeni Jeton İste",
+          "VERIFICATION_VALIDATION_ONGOING": "{{ value }} Alanınızı doğrulamak için yöntem seçildi. ",
+          "VERIFICATION_SUCCESSFUL": "Alan adı başarıyla doğrulandı!",
+          "RESETMETHOD": "Doğrulama yöntemini sıfırla"
+        },
+        "DOWNLOAD_FILE": "Dosyayı İndir",
+        "SELECTORGTOOLTIP": "Bu kuruluşu seçin.",
+        "PRIMARYDOMAIN": "Birincil Etki Alanı",
+        "STATE": "Durum",
+        "USEPASSWORD": "Başlangıç ​​Şifresini Ayarla",
+        "USEPASSWORDDESC": "Kullanıcının başlatma sırasında parolayı ayarlaması gerekmez."
+      },
+      "LIST": {
+        "TITLE": "Organizasyonlar",
+        "DESCRIPTION": "Bunlar örneğinizdeki kuruluşlardır"
+      },
+      "DOMAINS": {
+        "NEW": "Etki Alanı Ekle",
+        "TITLE": "Doğrulanmış alanlar",
+        "DESCRIPTION": "Kuruluşunuzun etki alanlarını yapılandırın. ",
+        "SETPRIMARY": "Birincil olarak ayarla",
+        "DELETE": {
+          "TITLE": "Etki Alanını Sil",
+          "DESCRIPTION": "Alan adlarınızdan birini silmek üzeresiniz."
+        },
+        "ADD": {
+          "TITLE": "Etki Alanı Ekle",
+          "DESCRIPTION": "Kuruluşunuz için bir alan adı eklemek üzeresiniz. "
+        }
+      },
+      "STATE": {
+        "0": "Tanımlanmadı",
+        "1": "Aktif",
+        "2": "Devre dışı bırakıldı"
+      },
+      "MEMBER": {
+        "TITLE": "Organizasyon Yöneticileri",
+        "DESCRIPTION": "Kuruluşunuzun tercihlerini değiştirebilecek kullanıcıları tanımlayın."
+      },
+      "TOAST": {
+        "UPDATED": "Kuruluş başarıyla güncellendi.",
+        "DEACTIVATED": "Organizasyon devre dışı bırakıldı.",
+        "REACTIVATED": "Organizasyon yeniden etkinleştirildi.",
+        "DOMAINADDED": "Etki alanı eklendi.",
+        "DOMAINREMOVED": "Etki alanı kaldırıldı.",
+        "MEMBERADDED": "Yönetici eklendi.",
+        "MEMBERREMOVED": "Yönetici kaldırıldı.",
+        "MEMBERCHANGED": "Yönetici değişti.",
+        "SETPRIMARY": "Birincil etki alanı kümesi.",
+        "DELETED": "Kuruluş başarıyla silindi",
+        "DEFAULTORGNOTFOUND": "Varsayılan organizasyon bulunamadı",
+        "ORG_WAS_DELETED": "Kuruluş silindi."
+      },
+      "DIALOG": {
+        "DEACTIVATE": {
+          "TITLE": "Kuruluşu devre dışı bırak",
+          "DESCRIPTION": "Kuruluşunuzu devre dışı bırakmak üzeresiniz. "
+        },
+        "REACTIVATE": {
+          "TITLE": "Kuruluşu yeniden etkinleştirin",
+          "DESCRIPTION": "Kuruluşunuzu yeniden etkinleştirmek üzeresiniz. "
+        },
+        "DELETE": {
+          "TITLE": "Kuruluşu sil",
+          "DESCRIPTION": "Kuruluşunuzu silmek üzeresiniz. ",
+          "TYPENAME": "Tip '{{value}}', kuruluşunuzu silmek için.",
+          "ORGNAME": "İsim",
+          "BTN": "Silmek"
+        }
+      }
+    },
+    "SETTINGS": {
+      "LIST": {
+        "ORGS": "Organizasyonlar",
+        "FEATURESETTINGS": "Özellikler",
+        "LANGUAGES": "Diller",
+        "LOGIN": "Oturum Açma Davranışı ve Güvenliği",
+        "LOCKOUT": "Lokavt",
+        "AGE": "Şifrenin geçerlilik süresi",
+        "COMPLEXITY": "Şifre karmaşıklığı",
+        "NOTIFICATIONS": "Bildirimler",
+        "SMTP_PROVIDER": "SMTP Sağlayıcısı",
+        "SMS_PROVIDER": "SMS/Telefon Sağlayıcısı",
+        "NOTIFICATIONS_DESC": "SMTP ve SMS Ayarları",
+        "MESSAGETEXTS": "Mesaj Metinleri",
+        "IDP": "Kimlik Sağlayıcılar",
+        "VERIFIED_DOMAINS": "Doğrulanmış alanlar",
+        "DOMAIN": "Etki alanı ayarları",
+        "LOGINTEXTS": "Giriş Arayüzü Metinleri",
+        "BRANDING": "Özelleştirme",
+        "PRIVACYPOLICY": "Dış bağlantılar",
+        "OIDC": "OIDC Token'ın kullanım ömrü ve sona erme tarihi",
+        "SECRETS": "Gizli Oluşturucu",
+        "SECURITY": "Güvenlik ayarları",
+        "EVENTS": "Olaylar",
+        "FAILEDEVENTS": "Başarısız Etkinlikler",
+        "VIEWS": "Görünümler"
+      },
+      "GROUPS": {
+        "GENERAL": "Genel bilgi",
+        "NOTIFICATIONS": "Bildirimler",
+        "LOGIN": "Giriş ve Erişim",
+        "DOMAIN": "İhtisas",
+        "TEXTS": "Metinler ve Diller",
+        "APPEARANCE": "Dış görünüş",
+        "OTHER": "Diğer",
+        "STORAGE": "Depolamak"
+      }
+    },
+    "SETTING": {
+      "LANGUAGES": {
+        "DEFAULT": "Varsayılan Dil",
+        "ALLOWED": "İzin Verilen Diller",
+        "NOT_ALLOWED": "İzin Verilmeyen Diller",
+        "ALLOW_ALL": "Tümüne İzin Ver",
+        "DISALLOW_ALL": "Tümüne İzin Verme",
+        "SETASDEFAULT": "Varsayılan Dil Olarak Ayarla",
+        "DEFAULT_SAVED": "Varsayılan Dil kaydedildi",
+        "ALLOWED_SAVED": "İzin Verilen Diller kaydedildi",
+        "OPTIONS": {
+          "de": "Almanca",
+          "en": "İngilizce",
+          "es": "İspanyolca",
+          "fr": "Fransızca",
+          "it": "İtalyan",
+          "ja": "日本語",
+          "pl": "Polski",
+          "zh": "简体中文",
+          "bg": "Bulgarlar",
+          "pt": "Portekizce",
+          "mk": "Makedonya",
+          "cs": "Čeština",
+          "ru": "Rusça",
+          "nl": "Hollanda",
+          "sv": "Svenska",
+          "tr": "Türkçe"
+        }
+      },
+      "SMTP": {
+        "TITLE": "SMTP Sağlayıcısı",
+        "DESCRIPTION": "Tanım",
+        "SENDERADDRESS": "Gönderenin E-posta Adresi",
+        "SENDERNAME": "Gönderenin Adı",
+        "REPLYTOADDRESS": "Yanıt Adresi",
+        "HOSTANDPORT": "Ana Bilgisayar ve Bağlantı Noktası",
+        "USER": "Kullanıcı",
+        "PASSWORD": "Şifre",
+        "SETPASSWORD": "SMTP Şifresini Ayarla",
+        "PASSWORDSET": "SMTP Şifresi başarıyla ayarlandı.",
+        "TLS": "Aktarım Katmanı Güvenliği (TLS)",
+        "SAVED": "Başarıyla kaydedildi!",
+        "NOCHANGES": "Değişiklik yok!",
+        "REQUIREDWARN": "Alanınızdan bildirim göndermek için SMTP verilerinizi girmeniz gerekmektedir."
+      },
+      "SMS": {
+        "PROVIDERS": "Sağlayıcılar",
+        "PROVIDER": "SMS Sağlayıcı",
+        "ADDPROVIDER": "SMS Sağlayıcı Ekle",
+        "ADDPROVIDERDESCRIPTION": "Mevcut sağlayıcılardan birini seçin ve gerekli verileri girin.",
+        "REMOVEPROVIDER": "Sağlayıcıyı Kaldır",
+        "REMOVEPROVIDER_DESC": "Bir sağlayıcı yapılandırmasını silmek üzeresiniz. ",
+        "SMSPROVIDERSTATE": {
+          "0": "belirtilmemiş",
+          "1": "Aktif",
+          "2": "Etkin değil"
+        },
+        "ACTIVATED": "Sağlayıcı etkinleştirildi.",
+        "DEACTIVATED": "Sağlayıcı devre dışı bırakıldı.",
+        "TWILIO": {
+          "SID": "Sid",
+          "TOKEN": "Jeton",
+          "SENDERNUMBER": "Gönderen Numarası",
+          "ADDED": "Twilio başarıyla eklendi.",
+          "UPDATED": "Twilio başarıyla güncellendi.",
+          "REMOVED": "Twilio kaldırıldı",
+          "CHANGETOKEN": "Jetonu Değiştir",
+          "SETTOKEN": "Jeton Ayarla",
+          "TOKENSET": "Jeton başarıyla ayarlandı."
+        }
+      },
+      "SECRETS": {
+        "TYPES": "Gizli Türler",
+        "TYPE": {
+          "1": "Başlatma Postası",
+          "2": "E-posta doğrulaması",
+          "3": "Telefon doğrulaması",
+          "4": "Şifre Sıfırlama",
+          "5": "Parolasız Başlatma",
+          "6": "Uygulama Sırrı",
+          "7": "Tek Kullanımlık Şifre (OTP) - SMS",
+          "8": "Tek Kullanımlık Şifre (OTP) - E-posta"
+        },
+        "EXPIRY": "Son kullanma tarihi (dakika olarak)",
+        "INCLUDEDIGITS": "Numaraları Ekle",
+        "INCLUDESYMBOLS": "Sembolleri Ekle",
+        "INCLUDELOWERLETTERS": "Küçük harfleri dahil et",
+        "INCLUDEUPPERLETTERS": "Üst harfleri dahil et",
+        "LENGTH": "Uzunluk",
+        "UPDATED": "Ayarlar güncellendi."
+      },
+      "SECURITY": {
+        "IFRAMETITLE": "iFrame",
+        "IFRAMEDESCRIPTION": "Bu ayar, CSP'yi izin verilen bir dizi alandan çerçevelemeye izin verecek şekilde ayarlar. ",
+        "IFRAMEENABLED": "iFrame'e izin ver",
+        "ALLOWEDORIGINS": "İzin verilen URL'ler",
+        "IMPERSONATIONTITLE": "Kimliğe bürünme",
+        "IMPERSONATIONENABLED": "Kimliğe Bürünmeye İzin Ver",
+        "IMPERSONATIONDESCRIPTION": "Bu ayar prensipte kimliğe bürünme kullanımına izin verir. "
+      },
+      "FEATURES": {
+        "LOGINDEFAULTORG": "Giriş Varsayılan Organizasyonu",
+        "LOGINDEFAULTORG_DESCRIPTION": "Oturum açma kullanıcı arayüzü, herhangi bir kuruluş bağlamı ayarlanmadıysa varsayılan kuruluşun ayarlarını kullanır (örnekteki ayarları değil)",
+        "OIDCLEGACYINTROSPECTION": "OIDC Eski iç gözlem",
+        "OIDCLEGACYINTROSPECTION_DESCRIPTION": "Performans nedenleriyle yakın zamanda iç gözlem uç noktasını yeniden düzenledik. ",
+        "OIDCTOKENEXCHANGE": "OIDC Token Değişimi",
+        "OIDCTOKENEXCHANGE_DESCRIPTION": "OIDC belirteci uç noktası için deneysel urn:ietf:params:oauth:grant-type:token-exchange hibe türünü etkinleştirin. ",
+        "OIDCTRIGGERINTROSPECTIONPROJECTIONS": "OIDC İç gözlem projeksiyonlarını tetikleyin",
+        "OIDCTRIGGERINTROSPECTIONPROJECTIONS_DESCRIPTION": "Bir iç gözlem isteği sırasında yansıtma tetikleyicilerini etkinleştirin. ",
+        "USERSCHEMA": "Kullanıcı Şeması",
+        "USERSCHEMA_DESCRIPTION": "Kullanıcı Şemaları, kullanıcının veri şemalarını yönetmeye olanak tanır. ",
+        "ACTIONS": "Eylemler",
+        "ACTIONS_DESCRIPTION": "Actions v2, veri yürütmelerini ve hedeflerini yönetmeye olanak tanır. ",
+        "STATES": {
+          "INHERITED": "Varsayılan",
+          "ENABLED": "Etkinleştirilmiş",
+          "DISABLED": "Devre Dışı"
+        },
+        "INHERITED_DESCRIPTION": "Bu, değeri sistemin varsayılan değerine ayarlar.",
+        "INHERITEDINDICATOR_DESCRIPTION": {
+          "ENABLED": "\"Etkin\" varsayılan değerine ayarlandı.",
+          "DISABLED": "\"Devre Dışı\" varsayılan değerine ayarlandı."
+        },
+        "RESET": "Tümünü varsayılan ayarlarla sıfırla"
+      },
+      "DIALOG": {
+        "RESET": {
+          "DEFAULTTITLE": "Ayarı Sıfırla",
+          "DEFAULTDESCRIPTION": "Ayarlarınızı örneğinizin varsayılan yapılandırmasına sıfırlamak üzeresiniz. ",
+          "LOGINPOLICY_DESCRIPTION": "Uyarı: Devam ederseniz Kimlik Sağlayıcı ayarları da örnek ayarına sıfırlanacaktır."
+        }
+      }
+    },
+    "POLICY": {
+      "APPLIEDTO": "Uygulanan",
+      "PWD_COMPLEXITY": {
+        "TITLE": "Şifre Karmaşıklığı",
+        "DESCRIPTION": "Ayarlanan tüm şifrelerin belirli bir kalıba karşılık gelmesini sağlar",
+        "SYMBOLANDNUMBERERROR": "Bir rakam ve bir simge/noktalama işaretinden oluşmalıdır.",
+        "SYMBOLERROR": "Bir sembol/noktalama işareti içermelidir.",
+        "NUMBERERROR": "Bir rakam içermelidir.",
+        "PATTERNERROR": "Parola gerekli kalıba uymuyor."
+      },
+      "NOTIFICATION": {
+        "TITLE": "Bildiri",
+        "DESCRIPTION": "Hangi değişikliklere ilişkin bildirimlerin gönderileceğini belirler.",
+        "PASSWORDCHANGE": "Şifre değişikliği"
+      },
+      "PRIVATELABELING": {
+        "DESCRIPTION": "Girişe kişiselleştirilmiş stilinizi verin ve davranışını değiştirin.",
+        "PREVIEW_DESCRIPTION": "İlkedeki değişiklikler otomatik olarak önizleme ortamına dağıtılacaktır.",
+        "BTN": "Dosya Seç",
+        "ACTIVATEPREVIEW": "Yapılandırmayı uygula",
+        "DARK": "Karanlık Tema",
+        "LIGHT": "Açık Tema",
+        "CHANGEVIEW": "Görünümü Değiştir",
+        "ACTIVATED": "Politika değişiklikleri artık YAYINDA",
+        "THEME": "Tema",
+        "COLORS": "Renkler",
+        "FONT": "Yazı tipi",
+        "ADVANCEDBEHAVIOR": "Gelişmiş Davranış",
+        "DROP": "Resmi buraya bırakın veya",
+        "RELEASE": "Serbest bırakmak",
+        "DROPFONT": "Yazı tipi dosyasını buraya bırakın",
+        "RELEASEFONT": "Serbest bırakmak",
+        "USEOFLOGO": "Logonuz, Giriş kısmında ve e-postalarda kullanılacak, simge ise konsoldaki organizasyon değiştiricide olduğu gibi daha küçük kullanıcı arayüzü öğeleri için kullanılacaktır.",
+        "MAXSIZE": "Maksimum boyut 524kB ile sınırlıdır",
+        "EMAILNOSVG": "SVG dosya formatı e-postalarda desteklenmez. ",
+        "MAXSIZEEXCEEDED": "Maksimum boyut 524kB aşıldı.",
+        "NOSVGSUPPORTED": "SVG desteklenmiyor!",
+        "FONTINLOGINONLY": "Yazı tipi şu anda yalnızca oturum açma arayüzünde görüntüleniyor.",
+        "BACKGROUNDCOLOR": "Arka plan rengi",
+        "PRIMARYCOLOR": "Ana renk",
+        "WARNCOLOR": "Uyarı rengi",
+        "FONTCOLOR": "Yazı tipi rengi",
+        "VIEWS": {
+          "PREVIEW": "Önizleme",
+          "CURRENT": "Mevcut Yapılandırma"
+        },
+        "PREVIEW": {
+          "TITLE": "Giriş yapmak",
+          "SECOND": "ZITADEL-Hesabınızla giriş yapın.",
+          "ERROR": "Kullanıcı bulunamadı!",
+          "PRIMARYBUTTON": "Sonraki",
+          "SECONDARYBUTTON": "kayıt olmak"
+        },
+        "THEMEMODE": {
+          "THEME_MODE_AUTO": "Otomatik Mod",
+          "THEME_MODE_LIGHT": "Yalnızca Açık Tema",
+          "THEME_MODE_DARK": "Yalnızca Karanlık Tema"
+        }
+      },
+      "PWD_AGE": {
+        "TITLE": "Şifre Sona Erme Tarihi",
+        "DESCRIPTION": "Şifrelerin süresinin dolması için bir politika belirleyebilirsiniz. "
+      },
+      "PWD_LOCKOUT": {
+        "TITLE": "Kilitleme Politikası",
+        "DESCRIPTION": "Hesapların engelleneceği maksimum şifre yeniden deneme sayısını belirleyin."
+      },
+      "PRIVATELABELING_POLICY": {
+        "TITLE": "Özelleştirme",
+        "BTN": "Dosya Seç",
+        "DESCRIPTION": "Oturum açma görünümünü özelleştirin",
+        "ACTIVATEPREVIEW": "Yapılandırmayı Etkinleştir"
+      },
+      "LOGIN_POLICY": {
+        "TITLE": "Giriş Ayarları",
+        "DESCRIPTION": "Kullanıcıların kimliklerinin nasıl doğrulanabileceğini tanımlayın ve Kimlik Sağlayıcıları yapılandırın",
+        "DESCRIPTIONCREATEADMIN": "Kullanıcılar aşağıdaki mevcut kimlik sağlayıcıları arasından seçim yapabilir.",
+        "DESCRIPTIONCREATEMGMT": "Kullanıcılar aşağıdaki mevcut kimlik sağlayıcıları arasından seçim yapabilir. ",
+        "LIFETIME_INVALID": "Form geçersiz değer(ler) içeriyor.",
+        "SAVED": "Başarıyla kaydedildi!",
+        "PROVIDER_ADDED": "Kimlik sağlayıcı etkinleştirildi."
+      },
+      "PRIVACY_POLICY": {
+        "DESCRIPTION": "Gizlilik Politikanızı ve Hizmet Şartları Bağlantılarınızı Ayarlayın",
+        "TOSLINK": "Hizmet Şartları bağlantısı",
+        "POLICYLINK": "Gizlilik Politikasına Bağlantı",
+        "HELPLINK": "Yardım Bağlantısı",
+        "SUPPORTEMAIL": "Destek E-postası",
+        "DOCSLINK": "Dokümanlar Bağlantısı (Konsol)",
+        "CUSTOMLINK": "Özel Bağlantı (Konsol)",
+        "CUSTOMLINKTEXT": "Özel Bağlantı Metni (Konsol)",
+        "SAVED": "Başarıyla kaydedildi!",
+        "RESET_TITLE": "Varsayılan Değerleri Geri Yükle",
+        "RESET_DESCRIPTION": "Hizmet Şartları ve Gizlilik Politikası için varsayılan Bağlantıları geri yüklemek üzeresiniz. "
+      },
+      "LOGIN_TEXTS": {
+        "TITLE": "Giriş Arayüzü Metinleri",
+        "DESCRIPTION": "Giriş arayüzleri için metinlerinizi tanımlayın. ",
+        "DESCRIPTION_SHORT": "Giriş arayüzleri için metinlerinizi tanımlayın.",
+        "NEWERVERSIONEXISTS": "Daha Yeni Sürüm mevcut",
+        "CURRENTDATE": "Mevcut yapılandırma",
+        "CHANGEDATE": "Daha Yeni Sürüm",
+        "KEYNAME": "Giriş Ekranı / Arayüz",
+        "RESET_TITLE": "Varsayılan Değerleri Geri Yükle",
+        "RESET_DESCRIPTION": "Tüm varsayılan değerleri geri yüklemek üzeresiniz. ",
+        "UNSAVED_TITLE": "Kaydetmeden devam edilsin mi?",
+        "UNSAVED_DESCRIPTION": "Kaydetmeden değişiklik yaptınız. ",
+        "ACTIVE_LANGUAGE_NOT_ALLOWED": "İzin verilmeyen bir dil seçtiniz. ",
+        "LANGUAGES_NOT_ALLOWED": "İzin verilmiyor:",
+        "LANGUAGE": "Dil",
+        "LANGUAGES": {
+          "de": "Almanca",
+          "en": "İngilizce",
+          "es": "İspanyolca",
+          "fr": "Fransızca",
+          "it": "İtalyan",
+          "ja": "日本語",
+          "pl": "Polski",
+          "zh": "简体中文",
+          "bg": "Bulgarlar",
+          "pt": "Portekizce",
+          "mk": "Makedonya",
+          "cs": "Čeština",
+          "ru": "Rusça",
+          "nl": "Hollanda",
+          "sv": "Svenska"
+        },
+        "KEYS": {
+          "emailVerificationDoneText": "E-posta doğrulaması tamamlandı",
+          "emailVerificationText": "E-posta doğrulaması",
+          "externalUserNotFoundText": "Harici kullanıcı bulunamadı",
+          "footerText": "Altbilgi",
+          "initMfaDoneText": "MFA'nın başlatılması tamamlandı",
+          "initMfaOtpText": "MFA'yı başlat",
+          "initMfaPromptText": "MFA İstemini Başlat",
+          "initMfaU2fText": "Evrensel İkinci Faktörü Başlat",
+          "initPasswordDoneText": "Şifreyi başlatma işlemi tamamlandı",
+          "initPasswordText": "Şifreyi başlat",
+          "initializeDoneText": "Kullanıcıyı başlatma işlemi tamamlandı",
+          "initializeUserText": "Kullanıcıyı başlat",
+          "linkingUserDoneText": "Kullanıcının bağlanması tamamlandı",
+          "loginText": "Giriş yapmak",
+          "logoutText": "Oturumu kapat",
+          "mfaProvidersText": "MFA Sağlayıcıları",
+          "passwordChangeDoneText": "Şifre değişikliği yapıldı",
+          "passwordChangeText": "Şifre değişikliği",
+          "passwordResetDoneText": "Şifre sıfırlama işlemi tamamlandı",
+          "passwordText": "Şifre",
+          "registrationOptionText": "Kayıt Seçenekleri",
+          "registrationOrgText": "Kuruluşu Kaydet",
+          "registrationUserText": "Kullanıcıyı Kaydet",
+          "selectAccountText": "Hesap Seçin",
+          "successLoginText": "Başarıyla giriş yapın",
+          "usernameChangeDoneText": "Kullanıcı adı değişikliği yapıldı",
+          "usernameChangeText": "Kullanıcı adı değişikliği",
+          "verifyMfaOtpText": "OTP'yi doğrulayın",
+          "verifyMfaU2fText": "Evrensel İkinci Faktörü Doğrulayın",
+          "passwordlessPromptText": "Şifresiz İstem",
+          "passwordlessRegistrationDoneText": "Şifresiz Kayıt Tamamlandı",
+          "passwordlessRegistrationText": "Şifresiz Kayıt",
+          "passwordlessText": "Şifresiz",
+          "externalRegistrationUserOverviewText": "Harici Kayıt Kullanıcıya Genel Bakış"
+        }
+      },
+      "MESSAGE_TEXTS": {
+        "TYPE": "Bildiri",
+        "TYPES": {
+          "INIT": "Başlatma",
+          "VE": "E-postayı Doğrula",
+          "VP": "Telefonu Doğrula",
+          "VSO": "SMS OTP'yi doğrulayın",
+          "VEO": "E-posta OTP'sini Doğrulayın",
+          "PR": "Şifre Sıfırlama",
+          "DC": "Alan Adı Talebi",
+          "PL": "Şifresiz",
+          "PC": "Şifre Değişikliği"
+        },
+        "CHIPS": {
+          "firstname": "İsim",
+          "lastname": "Aile adı",
+          "code": "Kod",
+          "preferredLoginName": "Tercih Edilen Giriş Adı",
+          "displayName": "Ekran adı",
+          "nickName": "Takma ad",
+          "loginnames": "Giriş adları",
+          "domain": "İhtisas",
+          "lastEmail": "Son e-posta",
+          "lastPhone": "Son telefon",
+          "verifiedEmail": "Doğrulanmış e-posta",
+          "verifiedPhone": "Doğrulanmış telefon",
+          "changedate": "Tarihi değiştir",
+          "username": "Kullanıcı adı",
+          "tempUsername": "Geçici kullanıcı adı",
+          "otp": "Tek kullanımlık şifre",
+          "verifyUrl": "Tek kullanımlık şifre URL'sini doğrulayın",
+          "expiry": "Son kullanma tarihi"
+        },
+        "TOAST": {
+          "UPDATED": "Özel Metinler kaydedildi."
+        }
+      },
+      "DEFAULTLABEL": "Mevcut ayarlar, Bulut Sunucunuzun standardına karşılık gelir.",
+      "BTN_INSTALL": "Kurmak",
+      "BTN_EDIT": "Değiştir",
+      "DATA": {
+        "DESCRIPTION": "Tanım",
+        "MINLENGTH": "minimum uzunluğa sahip olmalıdır",
+        "HASNUMBER": "bir sayı içermelidir",
+        "HASSYMBOL": "bir sembol içermelidir",
+        "HASLOWERCASE": "küçük harf içermelidir",
+        "HASUPPERCASE": "büyük harf içermelidir",
+        "SHOWLOCKOUTFAILURES": "kilitleme hatalarını göster",
+        "MAXPASSWORDATTEMPTS": "Şifre maksimum deneme sayısı",
+        "MAXOTPATTEMPTS": "OTP maksimum deneme sayısı",
+        "EXPIREWARNDAYS": "Günler sonra Son Kullanma Uyarısı",
+        "MAXAGEDAYS": "Gün cinsinden maksimum geçerlilik",
+        "USERLOGINMUSTBEDOMAIN": "Kuruluş etki alanını oturum açma adlarına son ek olarak ekleyin",
+        "USERLOGINMUSTBEDOMAIN_DESCRIPTION": "Bu ayarı etkinleştirirseniz tüm oturum açma adlarının sonuna kuruluş alanı eklenir. ",
+        "VALIDATEORGDOMAINS": "Kuruluş etki alanı doğrulaması gerekli (DNS veya HTTP sorgulaması)",
+        "SMTPSENDERADDRESSMATCHESINSTANCEDOMAIN": "SMTP Gönderen Adresi Örnek Etki Alanıyla eşleşiyor",
+        "ALLOWUSERNAMEPASSWORD_DESC": "Kullanıcı adı ve şifreyle geleneksel oturum açmaya izin verilir.",
+        "ALLOWEXTERNALIDP_DESC": "Temel kimlik sağlayıcıları için oturum açmaya izin veriliyor",
+        "ALLOWREGISTER_DESC": "Seçenek seçilirse oturum açma işleminde kullanıcıyı kaydetmeye yönelik ek bir adım görünür.",
+        "FORCEMFA": "MFA'yı zorla",
+        "FORCEMFALOCALONLY": "Yerel kimliği doğrulanmış kullanıcılar için MFA'yı zorunlu kıl",
+        "FORCEMFALOCALONLY_DESC": "Bu seçenek seçilirse yerel kimlik doğrulaması yapılmış kullanıcıların oturum açmak için ikinci bir faktör yapılandırması gerekir.",
+        "HIDEPASSWORDRESET_DESC": "Bu seçenek seçilirse kullanıcı, oturum açma işlemi sırasında şifresini sıfırlayamaz.",
+        "HIDELOGINNAMESUFFIX": "Oturum Açma Adı son ekini gizle",
+        "HIDELOGINNAMESUFFIX_DESC": "Oturum açma arayüzünde oturum açma adı son ekini gizler",
+        "IGNOREUNKNOWNUSERNAMES_DESC": "Seçenek seçilirse kullanıcı bulunamasa bile giriş işleminde şifre ekranı görüntülenecektir. ",
+        "ALLOWDOMAINDISCOVERY_DESC": "Seçenek seçilirse, giriş ekranında bilinmeyen bir kullanıcı adı girişinin son eki (@domain.com) kuruluş alan adlarıyla eşleştirilecek ve başarı durumunda o kuruluşun kaydına yönlendirilecektir.",
+        "DEFAULTREDIRECTURI": "Varsayılan Yönlendirme URI'sı",
+        "DEFAULTREDIRECTURI_DESC": "Oturum açma işlemi bir uygulama bağlamı olmadan (ör. postadan) başlatıldığında kullanıcının nereye yönlendirileceğini tanımlar.",
+        "ERRORMSGPOPUP": "Hatayı İletişim Kutusunda Göster",
+        "DISABLEWATERMARK": "Filigranı Gizle",
+        "DISABLEWATERMARK_DESC": "Oturum açma arayüzünde Powered by ZITADEL filigranını gizle"
+      },
+      "RESET": "Örnek varsayılanına sıfırla",
+      "CREATECUSTOM": "Özel Politika Oluştur",
+      "TOAST": {
+        "SET": "Politika başarıyla belirlendi!",
+        "RESETSUCCESS": "Politika başarıyla sıfırlandı!",
+        "UPLOADSUCCESS": "Başarıyla yüklendi!",
+        "DELETESUCCESS": "Başarıyla silindi!",
+        "UPLOADFAILED": "Yükleme başarısız oldu!"
+      }
+    },
+    "ORG_DETAIL": {
+      "TITLE": "Organizasyon",
+      "DESCRIPTION": "Burada kuruluşunuzun yapılandırmasını düzenleyebilir ve üyeleri yönetebilirsiniz.",
+      "DETAIL": {
+        "TITLE": "Detay",
+        "NAME": "İsim",
+        "DOMAIN": "İhtisas",
+        "STATE": {
+          "0": "Tanımlanmadı",
+          "1": "Aktif",
+          "2": "Etkin değil"
+        }
+      },
+      "MEMBER": {
+        "TITLE": "Üyeler",
+        "USERNAME": "Kullanıcı adı",
+        "DISPLAYNAME": "Ekran adı",
+        "LOGINNAME": "Giriş Adı",
+        "EMAIL": "E-posta",
+        "ROLES": "Roller",
+        "ADD": "Üye Ekle",
+        "ADDDESCRIPTION": "Eklenecek kullanıcıların adlarını girin."
+      },
+      "TABLE": {
+        "TOTAL": "Toplam giriş",
+        "SELECTION": "Seçilen Öğeler",
+        "DEACTIVATE": "Kullanıcıyı Devre Dışı Bırak",
+        "ACTIVATE": "Kullanıcıyı Etkinleştir",
+        "DELETE": "Kullanıcıyı Sil",
+        "CLEAR": "Seçimi temizle"
+      }
+    },
+    "PROJECT": {
+      "PAGES": {
+        "TITLE": "Proje",
+        "DESCRIPTION": "Burada uygulamaları tanımlayabilir, rolleri yönetebilir ve diğer kuruluşlara projenizi kullanma izni verebilirsiniz.",
+        "DELETE": "Projeyi Sil",
+        "DETAIL": "Detay",
+        "CREATE": "Proje Oluştur",
+        "CREATE_DESC": "Projenizin adını girin.",
+        "ROLE": "Rol",
+        "NOITEMS": "Proje yok",
+        "ZITADELPROJECT": "Bu ZITADEL projesine aittir. ",
+        "TYPE": {
+          "OWNED": "Sahip Olunan Projeler",
+          "OWNED_SINGULAR": "Sahip olunan proje",
+          "GRANTED_SINGULAR": "Hibe Edilen Proje {{name}}"
+        },
+        "PRIVATELABEL": {
+          "0": {
+            "TITLE": "belirtilmemiş",
+            "DESC": "Kullanıcı tanımlanır tanımlanmaz, sistem varsayılanı gösterilmeden önce, tanımlanan kullanıcının kuruluşunun markası gösterilecektir."
+          },
+          "1": {
+            "TITLE": "Proje ayarını kullan",
+            "DESC": "Proje sahibi kuruluşun markası gösterilecek"
+          },
+          "2": {
+            "TITLE": "Kullanıcı Organizasyonu ayarını kullan",
+            "DESC": "Proje organizasyonunun markalaması gösterilecek, ancak kullanıcı tanımlanır tanımlanmaz tanımlanan kullanıcının organizasyon ayarı gösterilecektir."
+          },
+          "TITLE": "Marka Ayarı",
+          "DIALOG": {
+            "TITLE": "Marka Ayarı",
+            "DESCRIPTION": "Projeyi kullanırken oturum açma davranışını seçin."
+          }
+        },
+        "PINNED": "Sabitlendi",
+        "ALL": "Tüm",
+        "CREATEDON": "Oluşturulma tarihi",
+        "LASTMODIFIED": "Son değiştirilme tarihi",
+        "ADDNEW": "Yeni Proje Oluştur",
+        "DIALOG": {
+          "REACTIVATE": {
+            "TITLE": "Projeyi Yeniden Etkinleştir",
+            "DESCRIPTION": "Projenizi gerçekten yeniden etkinleştirmek istiyor musunuz?"
+          },
+          "DEACTIVATE": {
+            "TITLE": "Projeyi Devre Dışı Bırak",
+            "DESCRIPTION": "Projenizi gerçekten devre dışı bırakmak istiyor musunuz?"
+          },
+          "DELETE": {
+            "TITLE": "Projeyi Sil",
+            "DESCRIPTION": "Projenizi gerçekten silmek istiyor musunuz?",
+            "TYPENAME": "Kalıcı olarak silmek için projenin adını yazın."
+          }
+        }
+      },
+      "SETTINGS": {
+        "TITLE": "Ayarlar",
+        "DESCRIPTION": ""
+      },
+      "STATE": {
+        "0": "Tanımlanmadı",
+        "1": "Aktif",
+        "2": "Etkin değil",
+        "TITLE": "Durum"
+      },
+      "TYPE": {
+        "0": "Bilinmeyen tür",
+        "1": "Sahip olunan",
+        "2": "İmtiyazlı",
+        "TITLE": "Tip"
+      },
+      "NAME": "İsim",
+      "NAMEDIALOG": {
+        "TITLE": "Projeyi Yeniden Adlandır",
+        "DESCRIPTION": "Projeniz için yeni adı girin",
+        "NAME": "Yeni Ad"
+      },
+      "MEMBER": {
+        "TITLE": "Yöneticiler",
+        "TITLEDESC": "Yöneticiler rollerine göre bu projede değişiklik yapabilirler.",
+        "DESCRIPTION": "Bu yöneticiler projenizi düzenleyebilir.",
+        "USERNAME": "Kullanıcı adı",
+        "DISPLAYNAME": "Ekran adı",
+        "LOGINNAME": "Giriş adı",
+        "EMAIL": "E-posta",
+        "ROLES": "Roller",
+        "USERID": "Kullanıcı kimliği"
+      },
+      "GRANT": {
+        "EMPTY": "Verilen bir organizasyon yok.",
+        "TITLE": "Proje Hibeleri",
+        "DESCRIPTION": "Başka bir kuruluşun projenizi kullanmasına izin verin.",
+        "EDITTITLE": "Rolleri düzenle",
+        "CREATE": {
+          "TITLE": "Organizasyon Hibe Oluştur",
+          "SEL_USERS": "Erişim vermek istediğiniz kullanıcıları seçin",
+          "SEL_PROJECT": "Bir proje arayın",
+          "SEL_ROLES": "Hibeye eklenmesini istediğiniz rolleri seçin",
+          "SEL_USER": "Kullanıcıları seçin",
+          "SEL_ORG": "Bir kuruluş arayın",
+          "SEL_ORG_DESC": "Hibe verilecek kuruluşu arayın.",
+          "ORG_DESCRIPTION": "Kuruluş için bir kullanıcı vermek üzeresiniz {{name}}.",
+          "ORG_DESCRIPTION_DESC": "Başka bir kuruluş için bir kullanıcıya izin vermek için yukarıdaki başlıktaki bağlamı değiştirin.",
+          "SEL_ORG_FORMFIELD": "Organizasyon",
+          "FOR_ORG": "Hibe aşağıdakiler için yaratılmıştır:"
+        },
+        "DETAIL": {
+          "TITLE": "Proje Hibe",
+          "DESC": "Belirtilen kuruluş tarafından hangi rollerin kullanılabileceğini seçebilir ve yöneticileri seçebilirsiniz.",
+          "MEMBERTITLE": "Yöneticiler",
+          "MEMBERDESC": "Bunlar, verilen kuruluşun yöneticileridir. ",
+          "PROJECTNAME": "Proje Adı",
+          "GRANTEDORG": "Yetkilendirilen Organizasyon",
+          "RESOURCEOWNER": "Kaynak Sahibi"
+        },
+        "STATE": "Durum",
+        "STATES": {
+          "1": "Aktif",
+          "2": "Etkin değil"
+        },
+        "ALL": "Tüm",
+        "SHOWDETAIL": "Ayrıntıları Göster",
+        "USER": "Kullanıcı",
+        "MEMBERS": "Yöneticiler",
+        "ORG": "Organizasyon",
+        "PROJECTNAME": "Proje Adı",
+        "GRANTEDORG": "Yetkilendirilen Organizasyon",
+        "GRANTEDORGDOMAIN": "İhtisas",
+        "RESOURCEOWNER": "Kaynak Sahibi",
+        "GRANTEDORGNAME": "Kuruluş Adı",
+        "GRANTID": "Hibe Kimliği",
+        "CREATIONDATE": "Oluşturulma Tarihi",
+        "CHANGEDATE": "Son değiştirilme tarihi",
+        "DATES": "Tarihler",
+        "ROLENAMESLIST": "Roller",
+        "NOROLES": "Rol yok",
+        "TYPE": "Tip",
+        "TOAST": {
+          "PROJECTGRANTUSERGRANTADDED": "Proje hibesi oluşturuldu.",
+          "PROJECTGRANTADDED": "Proje hibesi oluşturuldu.",
+          "PROJECTGRANTCHANGED": "Proje hibesi değişti.",
+          "PROJECTGRANTMEMBERADDED": "Hibe yöneticisi eklendi.",
+          "PROJECTGRANTMEMBERCHANGED": "Grant yöneticisi değişti.",
+          "PROJECTGRANTMEMBERREMOVED": "Hibe yöneticisi kaldırıldı.",
+          "PROJECTGRANTUPDATED": "Proje Hibesi güncellendi"
+        },
+        "DIALOG": {
+          "DELETE_TITLE": "Proje hibesini sil",
+          "DELETE_DESCRIPTION": "Bir proje hibesini silmek üzeresiniz. "
+        },
+        "ROLES": "Proje Rolleri"
+      },
+      "APP": {
+        "TITLE": "Uygulamalar",
+        "NAME": "İsim",
+        "NAMEREQUIRED": "Bir isim gerekli."
+      },
+      "ROLE": {
+        "EMPTY": "Henüz bir rol oluşturulmadı.",
+        "ADDNEWLINE": "Ek rol ekle",
+        "KEY": "Anahtar",
+        "TITLE": "Roller",
+        "DESCRIPTION": "Proje hibeleri oluşturmak için kullanılabilecek bazı rolleri tanımlayın.",
+        "NAME": "İsim",
+        "DISPLAY_NAME": "Ekran adı",
+        "GROUP": "Grup",
+        "ACTIONS": "Eylemler",
+        "ADDTITLE": "Rol Oluştur",
+        "ADDDESCRIPTION": "Yeni rolün verilerini girin.",
+        "EDITTITLE": "Rolü Düzenle",
+        "EDITDESCRIPTION": "Rol için yeni verileri girin.",
+        "DELETE": "Rolü Sil",
+        "CREATIONDATE": "Oluşturuldu",
+        "CHANGEDATE": "Son Değiştirilme",
+        "SELECTGROUPTOOLTIP": "Grubun tüm Rollerini seç {{group}}.",
+        "OPTIONS": "Seçenekler",
+        "ASSERTION": "Kimlik Doğrulamada Rolleri Belirleme",
+        "ASSERTION_DESCRIPTION": "Rol bilgileri, Userinfo uç noktasından ve belirteçler ve diğer türlerdeki uygulama ayarlarınıza bağlı olarak gönderilir.",
+        "CHECK": "Kimlik Doğrulamada yetkilendirmeyi kontrol edin",
+        "CHECK_DESCRIPTION": "Ayarlanırsa kullanıcıların yalnızca hesaplarına herhangi bir rol atanmışsa kimlik doğrulaması yapmalarına izin verilir.",
+        "DIALOG": {
+          "DELETE_TITLE": "Rolü sil",
+          "DELETE_DESCRIPTION": "Bir proje rolünü silmek üzeresiniz. "
+        }
+      },
+      "HAS_PROJECT": "Kimlik Doğrulamada Projeyi Denetle",
+      "HAS_PROJECT_DESCRIPTION": "Kullanıcının kuruluşunda bu projenin olup olmadığı kontrol edilir. ",
+      "TABLE": {
+        "TOTAL": "Toplam giriş:",
+        "SELECTION": "Seçilen Öğeler",
+        "DEACTIVATE": "Projeyi Devre Dışı Bırak",
+        "ACTIVATE": "Projeyi Etkinleştir",
+        "DELETE": "Projeyi Sil",
+        "ORGNAME": "Kuruluş Adı",
+        "ORGDOMAIN": "Organizasyon Alanı",
+        "STATE": "Durum",
+        "TYPE": "Tip",
+        "CREATIONDATE": "Oluşturulma tarihi:",
+        "CHANGEDATE": "Son değiştirilme tarihi",
+        "RESOURCEOWNER": "Mal sahibi",
+        "SHOWTABLE": "Tabloyu göster",
+        "SHOWGRID": "Izgarayı göster",
+        "EMPTY": "Proje bulunamadı"
+      },
+      "TOAST": {
+        "MEMBERREMOVED": "Yönetici kaldırıldı.",
+        "MEMBERSADDED": "Yöneticiler eklendi.",
+        "MEMBERADDED": "Yönetici eklendi.",
+        "MEMBERCHANGED": "Yönetici değişti.",
+        "ROLESCREATED": "Roller oluşturuldu.",
+        "ROLEREMOVED": "Rol kaldırıldı.",
+        "ROLECHANGED": "Rol değişti.",
+        "REACTIVATED": "Yeniden etkinleştirildi.",
+        "DEACTIVATED": "Devre dışı bırakıldı.",
+        "CREATED": "Proje oluşturuldu.",
+        "UPDATED": "Proje değişti.",
+        "GRANTUPDATED": "Grant değişti.",
+        "DELETED": "Proje silindi."
+      }
+    },
+    "ROLES": {
+      "DIALOG": {
+        "DELETE_TITLE": "Rolü sil",
+        "DELETE_DESCRIPTION": "Bir rolü silmek üzeresiniz. "
+      }
+    },
+    "NEXTSTEPS": {
+      "TITLE": "Sonraki Adımlar"
+    },
+    "IDP": {
+      "LIST": {
+        "ACTIVETITLE": "Aktif Kimlik Sağlayıcıları"
+      },
+      "CREATE": {
+        "TITLE": "Sağlayıcı ekle",
+        "DESCRIPTION": "Aşağıdaki sağlayıcılardan bir veya daha fazlasını seçin.",
+        "STEPPERTITLE": "Sağlayıcı Oluştur",
+        "OIDC": {
+          "TITLE": "OIDC Sağlayıcısı",
+          "DESCRIPTION": "OIDC sağlayıcınız için gerekli verileri girin."
+        },
+        "OAUTH": {
+          "TITLE": "OAuth Sağlayıcı",
+          "DESCRIPTION": "OAuth sağlayıcınız için gerekli verileri girin."
+        },
+        "JWT": {
+          "TITLE": "JWT Sağlayıcısı",
+          "DESCRIPTION": "JWT sağlayıcınız için gerekli verileri girin."
+        },
+        "GOOGLE": {
+          "TITLE": "Google Sağlayıcı",
+          "DESCRIPTION": "Google Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "GITLAB": {
+          "TITLE": "Gitlab Sağlayıcısı",
+          "DESCRIPTION": "Gitlab Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "GITLABSELFHOSTED": {
+          "TITLE": "Gitlab Kendi Kendine Barındırılan Sağlayıcı",
+          "DESCRIPTION": "Gitlab Kendi Kendine Barındırılan Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "GITHUBES": {
+          "TITLE": "GitHub Kurumsal Sunucu Sağlayıcısı",
+          "DESCRIPTION": "GitHub Kurumsal Sunucu Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "GITHUB": {
+          "TITLE": "Github Sağlayıcısı",
+          "DESCRIPTION": "Github Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "AZUREAD": {
+          "TITLE": "Microsoft Sağlayıcısı",
+          "DESCRIPTION": "Microsoft Kimlik Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "LDAP": {
+          "TITLE": "Aktif Dizin / LDAP",
+          "DESCRIPTION": "LDAP Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "APPLE": {
+          "TITLE": "Apple'la oturum açın",
+          "DESCRIPTION": "Apple Sağlayıcınızın kimlik bilgilerini girin"
+        },
+        "SAML": {
+          "TITLE": "SAML'de oturum açın",
+          "DESCRIPTION": "SAML Sağlayıcınızın kimlik bilgilerini girin"
+        }
+      },
+      "DETAIL": {
+        "TITLE": "Kimlik Sağlayıcı",
+        "DESCRIPTION": "Sağlayıcı yapılandırmanızı güncelleyin",
+        "DATECREATED": "Oluşturuldu",
+        "DATECHANGED": "Değiştirildi"
+      },
+      "OPTIONS": {
+        "ISAUTOCREATION": "Otomatik oluşturma",
+        "ISAUTOCREATION_DESC": "Seçilirse, henüz mevcut değilse bir hesap oluşturulacaktır.",
+        "ISAUTOUPDATE": "Otomatik güncelleme",
+        "ISAUTOUPDATE_DESC": "Seçilirse hesaplar yeniden kimlik doğrulama sırasında güncellenir.",
+        "ISCREATIONALLOWED": "Hesap oluşturmaya izin verildi (manuel olarak)",
+        "ISCREATIONALLOWED_DESC": "Hesapların harici bir hesap kullanılarak oluşturulup oluşturulamayacağını belirler. ",
+        "ISLINKINGALLOWED": "Hesap bağlamaya izin verildi (manuel olarak)",
+        "ISLINKINGALLOWED_DESC": "Bir kimliğin mevcut bir hesaba manuel olarak bağlanıp bağlanamayacağını belirler. ",
+        "AUTOLINKING_DESC": "Bir kimliğin mevcut bir hesaba bağlanmasının istenip istenmeyeceğini belirler.",
+        "AUTOLINKINGTYPE": {
+          "0": "Engelli",
+          "1": "Mevcut Kullanıcı Adını kontrol edin",
+          "2": "Mevcut E-postayı kontrol edin"
+        }
+      },
+      "OWNERTYPES": {
+        "0": "bilinmiyor",
+        "1": "Misal",
+        "2": "Organizasyon"
+      },
+      "STATES": {
+        "1": "aktif",
+        "2": "aktif değil"
+      },
+      "AZUREADTENANTTYPES": {
+        "0": "Yaygın",
+        "1": "Organizasyonlar",
+        "2": "Tüketiciler",
+        "3": "Kiracı Kimliği"
+      },
+      "AZUREADTENANTTYPE": "Kiracı Türü",
+      "AZUREADTENANTID": "Kiracı Kimliği",
+      "EMAILVERIFIED": "E-posta doğrulandı",
+      "NAMEHINT": "Belirtilmişse oturum açma arayüzünde gösterilecektir.",
+      "OPTIONAL": "isteğe bağlı",
+      "LDAPATTRIBUTES": "LDAP Nitelikleri",
+      "UPDATEBINDPASSWORD": "Bağlama Parolasını güncelle",
+      "UPDATECLIENTSECRET": "istemci gizli anahtarı güncelle",
+      "ADD": "Kimlik Sağlayıcı Ekle",
+      "TYPE": "Tip",
+      "OWNER": "Mal sahibi",
+      "ID": "İD",
+      "NAME": "İsim",
+      "AUTHORIZATIONENDPOINT": "Yetkilendirme Uç Noktası",
+      "TOKENENDPOINT": "Token Uç Noktası",
+      "USERENDPOINT": "Kullanıcı Uç Noktası",
+      "IDATTRIBUTE": "Kimlik Özelliği",
+      "AVAILABILITY": "Kullanılabilirlik",
+      "AVAILABLE": "mevcut",
+      "AVAILABLEBUTINACTIVE": "mevcut ama aktif değil",
+      "SETAVAILABLE": "mevcut olarak ayarla",
+      "SETUNAVAILABLE": "kullanılamıyor olarak ayarla",
+      "CONFIG": "Yapılandırma",
+      "STATE": "Durum",
+      "ISSUER": "İhraççı",
+      "SCOPESLIST": "Kapsam Listesi",
+      "CLIENTID": "İstemci ID",
+      "CLIENTSECRET": "İstemci Gizli Anahtarı",
+      "LDAPCONNECTION": "Bağlantı",
+      "LDAPUSERBINDING": "Kullanıcı bağlama",
+      "BASEDN": "TemelDn",
+      "BINDDN": "BindDn",
+      "BINDPASSWORD": "Şifreyi Bağla",
+      "SERVERS": "Sunucular",
+      "STARTTLS": "TLS'yi başlat",
+      "TIMEOUT": "Saniye cinsinden zaman aşımı",
+      "USERBASE": "Kullanıcı tabanı",
+      "USERFILTERS": "Kullanıcı filtreleri",
+      "USEROBJECTCLASSES": "Kullanıcı Nesnesi Sınıfları",
+      "REQUIRED": "gerekli",
+      "LDAPIDATTRIBUTE": "kimlik özelliği",
+      "AVATARURLATTRIBUTE": "Avatar URL'si özelliği",
+      "DISPLAYNAMEATTRIBUTE": "Görünen ad özelliği",
+      "EMAILATTRIBUTEATTRIBUTE": "E-posta özelliği",
+      "EMAILVERIFIEDATTRIBUTE": "E-postayla doğrulanmış özellik",
+      "FIRSTNAMEATTRIBUTE": "Verilen ad özelliği",
+      "LASTNAMEATTRIBUTE": "Aile adı özelliği",
+      "NICKNAMEATTRIBUTE": "Takma ad özelliği",
+      "PHONEATTRIBUTE": "Telefon özelliği",
+      "PHONEVERIFIEDATTRIBUTE": "Telefonla doğrulanmış özellik",
+      "PREFERREDLANGUAGEATTRIBUTE": "Tercih edilen dil özelliği",
+      "PREFERREDUSERNAMEATTRIBUTE": "Tercih edilen kullanıcı adı özelliği",
+      "PROFILEATTRIBUTE": "Profil özelliği",
+      "IDPDISPLAYNAMMAPPING": "IDP Görünen Ad Eşlemesi",
+      "USERNAMEMAPPING": "Kullanıcı Adı Eşleme",
+      "DATES": "Tarihler",
+      "CREATIONDATE": "Oluşturulma Tarihi",
+      "CHANGEDATE": "Son Değiştirilme",
+      "DEACTIVATE": "Devre dışı bırak",
+      "ACTIVATE": "Etkinleştir",
+      "DELETE": "Silmek",
+      "DELETE_TITLE": "IDP'yi sil",
+      "DELETE_DESCRIPTION": "Bir kimlik sağlayıcıyı silmek üzeresiniz. ",
+      "REMOVE_WARN_TITLE": "IDP'yi kaldır",
+      "REMOVE_WARN_DESCRIPTION": "Bir kimlik sağlayıcıyı kaldırmak üzeresiniz. ",
+      "DELETE_SELECTION_TITLE": "IDP'yi sil",
+      "DELETE_SELECTION_DESCRIPTION": "Bir kimlik sağlayıcıyı silmek üzeresiniz. ",
+      "EMPTY": "IDP mevcut değil",
+      "OIDC": {
+        "GENERAL": "Genel bilgi",
+        "TITLE": "OIDC Yapılandırması",
+        "DESCRIPTION": "OIDC Kimlik Sağlayıcının verilerini girin."
+      },
+      "JWT": {
+        "TITLE": "JWT Yapılandırması",
+        "DESCRIPTION": "JWT Kimlik Sağlayıcı verilerini girin.",
+        "HEADERNAME": "Başlık Adı",
+        "JWTENDPOINT": "JWT Uç Noktası",
+        "JWTKEYSENDPOINT": "JWT Anahtarları Uç Noktası"
+      },
+      "APPLE": {
+        "TEAMID": "Takım Kimliği",
+        "KEYID": "Anahtar Kimliği",
+        "PRIVATEKEY": "Özel Anahtar",
+        "UPDATEPRIVATEKEY": "Özel Anahtarı Güncelle",
+        "UPLOADPRIVATEKEY": "Özel Anahtarı Yükle",
+        "KEYMAXSIZEEXCEEDED": "Maksimum boyut 5kB aşıldı."
+      },
+      "SAML": {
+        "METADATAXML": "Meta Veri XML'i",
+        "METADATAURL": "Meta veri URL'si",
+        "BINDING": "bağlayıcı",
+        "SIGNEDREQUEST": "İmzalı Talep",
+        "NAMEIDFORMAT": "İsim Kimliği Formatı",
+        "TRANSIENTMAPPINGATTRIBUTENAME": "Özel Eşleme Özellik Adı",
+        "TRANSIENTMAPPINGATTRIBUTENAME_DESC": "Döndürülen \"nameid-format\"ın \"geçici\" olması durumunda kullanıcıyı eşlemek için alternatif özellik adı, ör. "
+      },
+      "TOAST": {
+        "SAVED": "Başarıyla kaydedildi.",
+        "REACTIVATED": "Idp yeniden etkinleştirildi.",
+        "DEACTIVATED": "Idp devre dışı bırakıldı.",
+        "SELECTEDREACTIVATED": "Seçilen Idps yeniden etkinleştirildi.",
+        "SELECTEDDEACTIVATED": "Seçilen Idps devre dışı bırakıldı.",
+        "SELECTEDKEYSDELETED": "Seçilen Idps silindi.",
+        "DELETED": "Idp başarıyla kaldırıldı!",
+        "ADDED": "Başarıyla eklendi.",
+        "REMOVED": "Başarıyla kaldırıldı."
+      },
+      "ISIDTOKENMAPPING": "Kimlik belirtecinden harita",
+      "ISIDTOKENMAPPING_DESC": "Seçilirse sağlayıcı bilgileri, kullanıcı bilgisi uç noktasından değil, kimlik belirtecinden eşlenir."
+    },
+    "MFA": {
+      "LIST": {
+        "MULTIFACTORTITLE": "Şifresiz",
+        "MULTIFACTORDESCRIPTION": "Parolasız Kimlik Doğrulamanız için Çoklu Faktörlerinizi burada tanımlayın.",
+        "SECONDFACTORTITLE": "Çok Faktörlü Kimlik Doğrulama",
+        "SECONDFACTORDESCRIPTION": "Parola kimlik doğrulamanızı güvence altına alabileceğiniz diğer olası faktörleri tanımlayın."
+      },
+      "CREATE": {
+        "TITLE": "Yeni Faktör",
+        "DESCRIPTION": "Yeni Faktör türünüzü seçin."
+      },
+      "DELETE": {
+        "TITLE": "Faktörü Sil",
+        "DESCRIPTION": "Giriş Ayarlarından bir Faktörü silmek üzeresiniz. "
+      },
+      "TOAST": {
+        "ADDED": "Başarıyla eklendi.",
+        "SAVED": "Başarıyla kaydedildi.",
+        "DELETED": "Başarıyla kaldırıldı"
+      },
+      "TYPE": "Tip",
+      "MULTIFACTORTYPES": {
+        "0": "Bilinmiyor",
+        "1": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri"
+      },
+      "SECONDFACTORTYPES": {
+        "0": "Bilinmiyor",
+        "1": "Authenticator Uygulaması (TOTP) ile Tek Kullanımlık Şifre",
+        "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri",
+        "3": "E-postayla Tek Kullanımlık Şifre (E-posta OTP)",
+        "4": "SMS ile Tek Kullanımlık Şifre (SMS OTP)"
+      }
+    },
+    "LOGINPOLICY": {
+      "CREATE": {
+        "TITLE": "Giriş Ayarları",
+        "DESCRIPTION": "Kuruluşunuzda kullanıcılarınızın kimliklerinin nasıl doğrulanabileceğini tanımlayın."
+      },
+      "IDPS": "Kimlik Sağlayıcılar",
+      "ADDIDP": {
+        "TITLE": "Kimlik Sağlayıcı Ekle",
+        "DESCRIPTION": "Kimlik doğrulama için önceden tanımlanmış veya kendi oluşturduğunuz sağlayıcıları seçebilirsiniz.",
+        "SELECTIDPS": "Kimlik sağlayıcılar"
+      },
+      "PASSWORDLESS": "Şifresiz Giriş",
+      "PASSWORDLESSTYPE": {
+        "0": "İzin verilmiyor",
+        "1": "İzin verilmiş"
+      }
+    },
+    "SMTP": {
+      "LIST": {
+        "TITLE": "SMTP Sağlayıcısı",
+        "DESCRIPTION": "Bunlar ZITADEL örneğiniz için SMTP sağlayıcılarıdır. ",
+        "EMPTY": "SMTP Sağlayıcı yok",
+        "ACTIVATED": "Etkinleştirildi",
+        "ACTIVATE": "Sağlayıcıyı etkinleştir",
+        "DEACTIVATE": "Sağlayıcıyı devre dışı bırak",
+        "TEST": "Sağlayıcınızı test edin",
+        "TYPE": "Tip",
+        "DIALOG": {
+          "ACTIVATED": "SMTP yapılandırması etkinleştirildi",
+          "ACTIVATE_WARN_TITLE": "SMTP yapılandırmasını etkinleştir",
+          "ACTIVATE_WARN_DESCRIPTION": "Bir SMTP yapılandırmasını etkinleştirmek üzeresiniz. ",
+          "DEACTIVATE_WARN_TITLE": "SMTP yapılandırmasını devre dışı bırak",
+          "DEACTIVATE_WARN_DESCRIPTION": "Bir SMTP yapılandırmasını devre dışı bırakmak üzeresiniz. ",
+          "DEACTIVATED": "SMTP yapılandırması devre dışı bırakıldı",
+          "DELETE_TITLE": "SMTP yapılandırmasını sil",
+          "DELETE_DESCRIPTION": "Bir yapılandırmayı silmek üzeresiniz. ",
+          "DELETED": "SMTP yapılandırması silindi",
+          "SENDER": "Tip {{value}}Bu SMTP yapılandırmasını silmek için ,",
+          "TEST_TITLE": "SMTP yapılandırmanızı test edin",
+          "TEST_DESCRIPTION": "Bu sağlayıcı için SMTP yapılandırmanızı test etmek üzere bir e-posta adresi belirtin",
+          "TEST_EMAIL": "E-posta adresi",
+          "TEST_RESULT": "Test sonucu"
+        }
+      },
+      "CREATE": {
+        "TITLE": "SMTP sağlayıcısı ekle",
+        "DESCRIPTION": "Aşağıdaki sağlayıcılardan bir veya daha fazlasını seçin.",
+        "STEPS": {
+          "TITLE": "Eklemek {{ value }} SMTP Sağlayıcısı",
+          "CREATE_DESC_TITLE": "Girin {{ value }} SMTP ayarları adım adım",
+          "CURRENT_DESC_TITLE": "Bunlar SMTP ayarlarınızdır",
+          "PROVIDER_SETTINGS": "SMTP Sağlayıcı Ayarları",
+          "SENDER_SETTINGS": "Gönderen Ayarları",
+          "NEXT_STEPS": "Sonraki Adımlar",
+          "ACTIVATE": {
+            "TITLE": "SMTP Sağlayıcınızı etkinleştirin",
+            "DESCRIPTION": "ZITADEL, siz etkinleştirene kadar bu SMTP Sağlayıcıyı bildirim göndermek için kullanamaz. "
+          },
+          "DEACTIVATE": {
+            "TITLE": "SMTP Sağlayıcınızı devre dışı bırakın",
+            "DESCRIPTION": "Bu SMTP Sağlayıcıyı devre dışı bırakırsanız, ZITADEL siz tekrar etkinleştirene kadar bildirim göndermek için onu kullanamaz."
+          },
+          "SAVE_SETTINGS": "Ayarlarınızı kaydedin",
+          "TEST": {
+            "TITLE": "Ayarlarınızı test edin",
+            "DESCRIPTION": "SMTP sağlayıcı ayarlarınızı test edebilir ve kaydetmeden önce test sonucunu kontrol edebilirsiniz.",
+            "RESULT": "E-postanız başarıyla gönderildi"
+          }
+        }
+      },
+      "DETAIL": {
+        "TITLE": "SMTP Sağlayıcı Ayarları"
+      },
+      "EMPTY": "SMTP sağlayıcısı yok",
+      "STEPS": {
+        "SENDGRID": {}
+      }
+    },
+    "APP": {
+      "LIST": "Uygulamalar",
+      "COMPLIANCE": "OIDC Uyumluluğu",
+      "URLS": "URL'ler",
+      "CONFIGURATION": "Yapılandırma",
+      "TOKEN": "Jeton Ayarları",
+      "PAGES": {
+        "TITLE": "Başvuru",
+        "ID": "İD",
+        "DESCRIPTION": "Burada uygulama verilerinizi ve yapılandırmasını düzenleyebilirsiniz.",
+        "CREATE": "Uygulama oluştur",
+        "CREATE_SELECT_PROJECT": "Önce projenizi seçin",
+        "CREATE_NEW_PROJECT": "veya yeni projenizin adını girin",
+        "CREATE_DESC_TITLE": "Başvuru Detaylarınızı Adım Adım Girin",
+        "CREATE_DESC_SUB": "Önerilen bir yapılandırma otomatik olarak oluşturulacaktır.",
+        "STATE": "Durum",
+        "DATECREATED": "Oluşturuldu",
+        "DATECHANGED": "Değiştirildi",
+        "URLS": "URL'ler",
+        "DELETE": "Uygulamayı Sil",
+        "JUMPTOPROJECT": "Rolleri, yetkilendirmeleri ve daha fazlasını yapılandırmak için projeye gidin.",
+        "DETAIL": {
+          "TITLE": "Detay",
+          "STATE": {
+            "0": "Tanımlanmadı",
+            "1": "Aktif",
+            "2": "Etkin değil"
+          }
+        },
+        "DIALOG": {
+          "CONFIG": {
+            "TITLE": "OIDC Yapılandırmasını Değiştir"
+          },
+          "DELETE": {
+            "TITLE": "Uygulamayı Sil",
+            "DESCRIPTION": "Bu uygulamayı gerçekten silmek istiyor musunuz?"
+          }
+        },
+        "NEXTSTEPS": {
+          "0": {
+            "TITLE": "Rolleri ekle",
+            "DESC": "Proje rollerinizi girin"
+          },
+          "1": {
+            "TITLE": "Kullanıcı ekle",
+            "DESC": "Kuruluşunuza yeni kullanıcılar ekleyin"
+          },
+          "2": {
+            "TITLE": "Yardım ve Destek",
+            "DESC": "Uygulama oluşturmaya ilişkin belgelerimizi okuyun veya desteğimizle iletişime geçin"
+          },
+          "TITLE": "Sonraki Adımlar"
+        }
+      },
+      "NAMEDIALOG": {
+        "TITLE": "Uygulamayı Yeniden Adlandır",
+        "DESCRIPTION": "Uygulamanızın yeni adını girin",
+        "NAME": "Yeni Ad"
+      },
+      "NAME": "İsim",
+      "TYPE": "Başvuru Türü",
+      "AUTHMETHOD": "Kimlik Doğrulama Yöntemi",
+      "AUTHMETHODSECTION": "Kimlik Doğrulama Yöntemi",
+      "GRANT": "Grant",
+      "ADDITIONALORIGINS": "Ek Origins Ekle",
+      "ADDITIONALORIGINSDESC": "Uygulamanıza yönlendirme olarak kullanılmayan ek Origins eklemek istiyorsanız bunu buradan yapabilirsiniz.",
+      "ORIGINS": "ORIGINS",
+      "NOTANORIGIN": "Girilen değer bir origin değil",
+      "PROSWITCH": "Ben bir profesyonelim. ",
+      "NAMEANDTYPESECTION": "Ad ve Tür",
+      "TITLEFIRST": "Uygulamanın adı",
+      "TYPETITLE": "Uygulama türü",
+      "OIDC": {
+        "WELLKNOWN": "Daha fazla bağlantı şu adresten alınabilir: <a href='{{url}}' title='Discovery endpoint' target='_blank'>keşif uç noktası</a>.",
+        "INFO": {
+          "ISSUER": "Yayıncı",
+          "CLIENTID": "İstemci ID"
+        },
+        "CURRENT": "Geçerli Yapılandırma",
+        "TOKENSECTIONTITLE": "AuthToken Seçenekleri",
+        "REDIRECTSECTIONTITLE": "Yönlendirme Ayarları",
+        "REDIRECTTITLE": "Oturum açmanın yönlendirileceği URI'leri belirtin.",
+        "POSTREDIRECTTITLE": "Bu, oturum kapatıldıktan sonraki yönlendirme URI'sidir.",
+        "REDIRECTDESCRIPTIONWEB": "Yönlendirme URI'leri https:// ile başlamalıdır. ",
+        "REDIRECTDESCRIPTIONNATIVE": "Yönlendirme URI'leri kendi protokolünüzle (http://127.0.0.1, http://[::1] veya http://localhost) başlamalıdır.",
+        "REDIRECTNOTVALID": "Bu yönlendirme URI'si geçerli değil.",
+        "COMMAORENTERSEPERATION": "↵ ile ayırın",
+        "TYPEREQUIRED": "Tür gereklidir.",
+        "TITLE": "OIDC Yapılandırması",
+        "CLIENTID": "İstemci ID",
+        "CLIENTSECRET": "İstemci Gizli Anahtarı",
+        "CLIENTSECRET_NOSECRET": "Seçtiğiniz kimlik doğrulama akışıyla hiçbir gizli anahtar gerekli değildir ve bu nedenle kullanılamaz.",
+        "CLIENTSECRET_DESCRIPTION": "İletişim kutusu kapatıldığında kaybolacağından istemcinizi güvenli bir yerde saklayın.",
+        "REGENERATESECRET": "İstemci Gizli Anahtarı Yeniden Oluştur",
+        "DEVMODE": "Geliştirme Modu",
+        "DEVMODE_ENABLED": "Etkinleştirilmiş",
+        "DEVMODE_DISABLED": "Devre dışı bırakılmış",
+        "DEVMODEDESC": "Dikkat: Geliştirme modu etkinleştirildiğinde yönlendirme URI'leri doğrulanmayacaktır.",
+        "SKIPNATIVEAPPSUCCESSPAGE": "Giriş Başarılı Sayfasını Atla",
+        "SKIPNATIVEAPPSUCCESSPAGE_DESCRIPTION": "Bu yerel uygulamaya giriş yaptıktan sonra başarı sayfasını atlayın.",
+        "REDIRECT": "URI'leri yönlendir",
+        "REDIRECTSECTION": "URI'leri yönlendir",
+        "POSTLOGOUTREDIRECT": "Oturum Kapatma Sonrası URI'leri",
+        "RESPONSESECTION": "Yanıt Türleri",
+        "GRANTSECTION": "Grant",
+        "GRANTTITLE": "Hibe türlerinizi seçin. ",
+        "APPTYPE": {
+          "0": "ağ",
+          "1": "Kullanıcı Aracısı",
+          "2": "Yerli"
+        },
+        "RESPONSETYPE": "Yanıt Türleri",
+        "RESPONSE": {
+          "0": "Kod",
+          "1": "Kimlik Jetonu",
+          "2": "Token-ID Tokenı"
+        },
+        "REFRESHTOKEN": "Refresh token",
+        "GRANTTYPE": "Grant",
+        "GRANT": {
+          "0": "Yetki Kodu",
+          "1": "Implicit",
+          "2": "Refresh token",
+          "3": "Cihaz Kodu",
+          "4": "Jeton Değişimi"
+        },
+        "AUTHMETHOD": {
+          "0": "Temel",
+          "1": "Post",
+          "2": "Hiçbiri",
+          "3": "Özel Anahtar JWT"
+        },
+        "TOKENTYPE": "Kimlik Doğrulama Jetonu Türü",
+        "TOKENTYPE0": "Taşıyıcı Jetonu",
+        "TOKENTYPE1": "JWT",
+        "UNSECUREREDIRECT": "Umarım ne yaptığını biliyorsundur.",
+        "OVERVIEWSECTION": "Genel Bakış",
+        "OVERVIEWTITLE": "Artık işiniz bitti. ",
+        "ACCESSTOKENROLEASSERTION": "Erişim belirtecine kullanıcı rolleri ekleme",
+        "ACCESSTOKENROLEASSERTION_DESCRIPTION": "Seçilirse kimliği doğrulanmış kullanıcının istenen rolleri erişim belirtecine eklenir.",
+        "IDTOKENROLEASSERTION": "ID Token içindeki kullanıcı rolleri",
+        "IDTOKENROLEASSERTION_DESCRIPTION": "Seçilirse kimliği doğrulanmış kullanıcının istenen rolleri kimlik belirtecine eklenir.",
+        "IDTOKENUSERINFOASSERTION": "Kimlik Jetonu içindeki Kullanıcı Bilgisi",
+        "IDTOKENUSERINFOASSERTION_DESCRIPTION": "Müşterilerin kimlik belirtecinden profil, e-posta, telefon ve adres taleplerini almasını sağlar.",
+        "CLOCKSKEW": "İstemcilerin OP ve istemcinin saat çarpıklığını yönetmesini sağlar. ",
+        "RECOMMENDED": "tavsiye edilen",
+        "NOTRECOMMENDED": "tavsiye edilmez",
+        "SELECTION": {
+          "APPTYPE": {
+            "WEB": {
+              "TITLE": "ağ",
+              "DESCRIPTION": ".net, PHP, Node.js, Java vb. gibi normal Web uygulamaları."
+            },
+            "NATIVE": {
+              "TITLE": "Yerli",
+              "DESCRIPTION": "Mobil Uygulamalar, Masaüstü Bilgisayarlar, Akıllı Cihazlar vb."
+            },
+            "USERAGENT": {
+              "TITLE": "Kullanıcı Aracısı",
+              "DESCRIPTION": "Tek Sayfa Uygulamaları (SPA) ve genel olarak tarayıcılarda yürütülen tüm JS çerçeveleri"
+            }
+          }
+        }
+      },
+      "API": {
+        "INFO": {
+          "CLIENTID": "Istemci Kimliği"
+        },
+        "REGENERATESECRET": "İstemci Gizli Anahtarı Yeniden Oluştur",
+        "SELECTION": {
+          "TITLE": "API'si",
+          "DESCRIPTION": "Genel olarak API'ler"
+        },
+        "AUTHMETHOD": {
+          "0": "Temel",
+          "1": "Özel Anahtar JWT"
+        }
+      },
+      "SAML": {
+        "SELECTION": {
+          "TITLE": "SAML",
+          "DESCRIPTION": "SAML Uygulamaları"
+        },
+        "CONFIGSECTION": "SAML Yapılandırması",
+        "CHOOSEMETADATASOURCE": "Aşağıdaki seçeneklerden birini kullanarak SAML yapılandırmanızı sağlayın:",
+        "METADATAOPT1": "1. Seçenek. Meta veri dosyasının bulunduğu URL'yi belirtin",
+        "METADATAOPT2": "2. Seçenek. Meta veri XML'inizi içeren bir dosya yükleyin",
+        "METADATAOPT3": "3. Seçenek. ENTITYID ve ACS URL'sini sağlayan minimum meta veri dosyasını anında oluşturun",
+        "UPLOAD": "XML dosyasını yükle",
+        "METADATA": "Meta veriler",
+        "METADATAFROMFILE": "Dosyadaki meta veriler",
+        "CERTIFICATE": "SAML sertifikası",
+        "DOWNLOADCERT": "SAML sertifikasını indirin",
+        "CREATEMETADATA": "Meta veri oluştur",
+        "ENTITYID": "Varlık Kimliği",
+        "ACSURL": "ACS uç noktası URL'si"
+      },
+      "AUTHMETHODS": {
+        "CODE": {
+          "TITLE": "Kod",
+          "DESCRIPTION": "Belirteçler için yetkilendirme kodunu değiştirin"
+        },
+        "PKCE": {
+          "TITLE": "PKCE",
+          "DESCRIPTION": "Daha fazla güvenlik için statik istemci sırrı yerine rastgele karma kullanın"
+        },
+        "POST": {
+          "TITLE": "POST",
+          "DESCRIPTION": "Formun bir parçası olarak client_id ve client_secret'i gönderin"
+        },
+        "PK_JWT": {
+          "TITLE": "Özel Anahtar JWT",
+          "DESCRIPTION": "Uygulamanızı yetkilendirmek için özel bir anahtar kullanın"
+        },
+        "BASIC": {
+          "TITLE": "Temel",
+          "DESCRIPTION": "Kullanıcı Adı ve Şifre ile Kimlik Doğrulama"
+        },
+        "IMPLICIT": {
+          "TITLE": "Implicit",
+          "DESCRIPTION": "Belirteçleri doğrudan yetkilendirme uç noktasından alın"
+        },
+        "DEVICECODE": {
+          "TITLE": "Cihaz Kodu",
+          "DESCRIPTION": "Cihazı bir bilgisayarda veya akıllı telefonda yetkilendirin."
+        },
+        "CUSTOM": {
+          "TITLE": "Gelenek",
+          "DESCRIPTION": "Ayarınız başka hiçbir seçeneğe uymuyor."
+        }
+      },
+      "TOAST": {
+        "REACTIVATED": "Uygulama yeniden etkinleştirildi.",
+        "DEACTIVATED": "Uygulama devre dışı bırakıldı.",
+        "OIDCUPDATED": "Uygulama güncellendi.",
+        "APIUPDATED": "Uygulama güncellendi",
+        "UPDATED": "Uygulama güncellendi.",
+        "CREATED": "Uygulama oluşturuldu.",
+        "CLIENTSECRETREGENERATED": "istemci gizli anahtarı oluşturuldu.",
+        "DELETED": "Uygulama silindi.",
+        "CONFIGCHANGED": "Değişiklikler algılandı!"
+      }
+    },
+    "GENDERS": {
+      "0": "Bilinmiyor",
+      "1": "Dişi",
+      "2": "Erkek",
+      "3": "Diğer"
+    },
+    "LANGUAGES": {
+      "de": "Almanca",
+      "en": "İngilizce",
+      "es": "İspanyolca",
+      "fr": "Fransızca",
+      "it": "İtalyan",
+      "ja": "日本語",
+      "pl": "Polski",
+      "zh": "简体中文",
+      "bg": "Bulgarlar",
+      "pt": "Portekizce",
+      "mk": "Makedonya",
+      "cs": "Čeština",
+      "ru": "Rusça",
+      "nl": "Hollanda",
+      "sv": "Svenska"
+    },
+    "MEMBER": {
+      "ADD": "Yönetici Ekle",
+      "CREATIONTYPE": "Oluşturma Türü",
+      "CREATIONTYPES": {
+        "0": "Sahip olunan proje",
+        "1": "Hibe Edilen Proje",
+        "2": "Organizasyon",
+        "3": "IAM",
+        "4": "Proje"
+      },
+      "EDITROLE": "Rolleri düzenle",
+      "EDITFOR": "Kullanıcının rollerini düzenleyin: {{value}}",
+      "DIALOG": {
+        "DELETE_TITLE": "Yöneticiyi Kaldır",
+        "DELETE_DESCRIPTION": "Bir yöneticiyi kaldırmak üzeresiniz. "
+      },
+      "SHOWDETAILS": "Ayrıntıları göstermek için tıklayın."
+    },
+    "ROLESLABEL": "Roller",
+    "GRANTS": {
+      "TITLE": "Yetkiler",
+      "DESC": "Bunların hepsi kuruluşunuzdaki yetkilerdir.",
+      "DELETE": "Yetkiyi Sil",
+      "EMPTY": "Yetki bulunamadı",
+      "ADD": "Yetki Oluştur",
+      "ADD_BTN": "Yeni",
+      "PROJECT": {
+        "TITLE": "Yetkilendirme",
+        "DESCRIPTION": "Belirtilen proje için yetkileri tanımlayın. "
+      },
+      "USER": {
+        "TITLE": "Yetkilendirme",
+        "DESCRIPTION": "Belirtilen kullanıcı için yetkileri tanımlayın. "
+      },
+      "CREATE": {
+        "TITLE": "Yetki oluştur",
+        "DESCRIPTION": "Kuruluşu, projeyi ve ilgili rolleri arayın."
+      },
+      "EDIT": {
+        "TITLE": "Yetkiyi değiştir"
+      },
+      "DETAIL": {
+        "TITLE": "Yetki Detayı",
+        "DESCRIPTION": "Burada yetkilendirmenin tüm ayrıntılarını görebilirsiniz."
+      },
+      "TOAST": {
+        "UPDATED": "Yetki güncellendi.",
+        "REMOVED": "Yetki kaldırıldı",
+        "BULKREMOVED": "Yetkiler kaldırıldı.",
+        "CANTSHOWINFO": "Bu kullanıcının ait olduğu kuruluşa üye olmadığınız için bu kullanıcının profilini ziyaret edemezsiniz"
+      },
+      "DIALOG": {
+        "DELETE_TITLE": "Yetkilendirmeyi sil",
+        "DELETE_DESCRIPTION": "Bir yetkilendirmeyi silmek üzeresiniz. ",
+        "BULK_DELETE_TITLE": "Yetkileri sil",
+        "BULK_DELETE_DESCRIPTION": "Birden fazla yetkilendirmeyi silmek üzeresiniz. "
+      }
+    },
+    "CHANGES": {
+      "LISTTITLE": "Son Değişiklikler",
+      "BOTTOM": "Listenin sonuna ulaştınız.",
+      "LOADMORE": "Daha fazlasını yükle",
+      "ORG": {
+        "TITLE": "Etkinlik",
+        "DESCRIPTION": "Burada organizasyon değişikliğine neden olan en son olayları görebilirsiniz."
+      },
+      "PROJECT": {
+        "TITLE": "Etkinlik",
+        "DESCRIPTION": "Burada proje değişikliğine neden olan en son olayları görebilirsiniz."
+      },
+      "USER": {
+        "TITLE": "Etkinlik",
+        "DESCRIPTION": "Burada kullanıcı değişikliğine neden olan en son olayları görebilirsiniz."
+      }
+    }
+  }
