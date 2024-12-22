@@ -120,8 +120,8 @@
           }
         },
         "PW_COMPLEXITY": {
-          "TITLE": "Şifre Karmaşıklığı",
-          "DESCRIPTION": "Karmaşıklık kuralları tanımlayarak kullanıcılarınızın güçlü şifreler kullanmasını sağlayın."
+          "TITLE": "ParolaKarmaşıklığı",
+          "DESCRIPTION": "Karmaşıklık kuralları tanımlayarak kullanıcılarınızın güçlü parola kullanmasını sağlayın."
         },
         "BRANDING": {
           "TITLE": "Özelleştirme",
@@ -190,14 +190,14 @@
           "DESCRIPTION": "Bildirim e-postanızın veya SMS mesajlarınızın metinlerini özelleştirin. ",
           "TYPE_DESCRIPTIONS": {
             "DC": "Kuruluşunuz için bir alan adı talebinde bulunduğunuzda, giriş adlarında bu alan adını kullanmayan kullanıcılardan, talep edilen alan adıyla eşleşecek şekilde giriş adlarını değiştirmeleri istenecektir.",
-            "INIT": "Bir kullanıcı oluşturulduğunda, şifresini belirleme bağlantısını içeren bir e-posta alacaktır.",
-            "PC": "Bir kullanıcı şifresini değiştirdiğinde, bildirim ayarlarında bunu etkinleştirdiyseniz, değişiklik hakkında bir bildirim alacaktır.",
-            "PL": "Kullanıcı parolasız bir kimlik doğrulama yöntemi eklediğinde, e-postadaki bir bağlantıya tıklayarak bu yöntemi etkinleştirmesi gerekir.",
-            "PR": "Kullanıcı şifresini sıfırladığında, yeni şifre belirleme bağlantısını içeren bir e-posta alacaktır.",
+            "INIT": "Bir kullanıcı oluşturulduğunda, parolasını belirleme bağlantısını içeren bir e-posta alacaktır.",
+            "PC": "Bir kullanıcı parolasını değiştirdiğinde, bildirim ayarlarında bunu etkinleştirdiyseniz, değişiklik hakkında bir bildirim alacaktır.",
+            "PL": "Kullanıcı parolasız bir kimlik doğrulama yöntemi istediğinde, e-postadaki bir bağlantıya tıklayarak bu yöntemi etkinleştirmesi gerekir.",
+            "PR": "Kullanıcı parolasını sıfırladığında, yeni parola belirleme bağlantısını içeren bir e-posta alacaktır.",
             "VE": "Bir kullanıcı e-posta adresini değiştirdiğinde, yeni adresi doğrulamak için bir bağlantı içeren bir e-posta alacaktır.",
             "VP": "Bir kullanıcı telefon numarasını değiştirdiğinde, yeni numarayı doğrulamak için bir kod içeren bir SMS alacaktır.",
-            "VEO": "Kullanıcı, e-posta yöntemiyle Tek Kullanımlık Şifre eklediğinde, e-posta adresine gönderilen kodu girerek şifreyi etkinleştirmesi gerekir.",
-            "VSO": "Kullanıcının SMS yöntemiyle Tek Kullanımlık Şifre eklediğinde, telefon numarasına gönderilen kodu girerek aktifleştirmesi gerekmektedir."
+            "VEO": "Kullanıcı, e-posta yöntemiyle Tek Kullanımlık parola istediğinde, e-posta adresine gönderilen kodu girerek parolayı etkinleştirmesi gerekir.",
+            "VSO": "Kullanıcının SMS yöntemiyle Tek Kullanımlık parola istediğinde, telefon numarasına gönderilen kodu girerek aktifleştirmesi gerekmektedir."
           }
         },
         "LOGIN_TEXTS": {
@@ -226,12 +226,12 @@
         },
         "LOGIN": {
           "LIFETIMES": {
-            "TITLE": "Giriş Ömürleri",
-            "DESCRIPTION": "Oturum açmayla ilgili bazı maksimum yaşam sürelerini azaltarak güvenliğinizi güçlendirin.",
-            "LABEL": "Saat cinsinden Maksimum Ömür",
+            "TITLE": "Oturum Süresi",
+            "DESCRIPTION": "Oturum açmayla ilgili bazı maksimum oturum sürelerini azaltarak güvenliğinizi güçlendirin.",
+            "LABEL": "Saat cinsinden Maksimum Oturum Süresi",
             "PW_CHECK": {
-              "TITLE": "Şifre Kontrolü",
-              "DESCRIPTION": "Bu sürenin sonunda kullanıcıların şifreleriyle yeniden kimlik doğrulaması yapması gerekecektir."
+              "TITLE": "Parola Kontrolü",
+              "DESCRIPTION": "Bu sürenin sonunda kullanıcıların parolalarıyla yeniden kimlik doğrulaması yapması gerekecektir."
             },
             "EXT_LOGIN_CHECK": {
               "TITLE": "Harici Giriş Kontrolü",
@@ -254,8 +254,8 @@
             "TITLE": "Giriş Formu",
             "DESCRIPTION": "Giriş formunu özelleştirin.",
             "USERNAME_PASSWORD_ALLOWED": {
-              "TITLE": "Kullanıcı adı ve Şifreye izin verildi",
-              "DESCRIPTION": "Kullanıcılarınızın kullanıcı adı ve şifreleriyle giriş yapmalarına izin verin. "
+              "TITLE": "Kullanıcı adı ve Parolaya izin verildi",
+              "DESCRIPTION": "Kullanıcılarınızın kullanıcı adı ve parolalarıyla giriş yapmalarına izin verin. "
             },
             "USER_REGISTRATION_ALLOWED": {
               "TITLE": "Kullanıcı Kaydına izin verildi",
@@ -270,8 +270,8 @@
               "DESCRIPTION": "Kullanıcılarınızın oturum açmak için ZITADEL kullanıcısını kullanmak yerine harici bir kimlik sağlayıcıyla oturum açmasına izin verin."
             },
             "HIDE_PASSWORD_RESET": {
-              "TITLE": "Şifre Sıfırlama gizli",
-              "DESCRIPTION": "Kullanıcılarınızın şifrelerini sıfırlamalarına izin vermeyin."
+              "TITLE": "ParolaSıfırlama gizli",
+              "DESCRIPTION": "Kullanıcılarınızın parolaları sıfırlamalarına izin vermeyin."
             },
             "DOMAIN_DISCOVERY_ALLOWED": {
               "TITLE": "Etki Alanı Keşfine izin verildi",
@@ -602,7 +602,7 @@
       "LOWERCASEMISSING": "Küçük harf içermelidir.",
       "SYMBOLERROR": "Bir sembol veya noktalama işareti içermelidir.",
       "NUMBERERROR": "Bir rakam içermelidir.",
-      "PWNOTEQUAL": "Verilen şifreler eşleşmiyor.",
+      "PWNOTEQUAL": "Verilen parolalar eşleşmiyor.",
       "PHONE": "Telefon numarası + ile başlamalıdır."
     },
     "USER": {
@@ -610,7 +610,7 @@
         "TITLE": "Ayarlar",
         "GENERAL": "Genel",
         "IDP": "Kimlik Sağlayıcılar",
-        "SECURITY": "Şifre ve Güvenlik",
+        "SECURITY": "Parolave Güvenlik",
         "KEYS": "Anahtarlar",
         "PAT": "Kişisel Erişim Jetonları",
         "USERGRANTS": "Yetkiler",
@@ -689,17 +689,17 @@
         "NAME": "İsim",
         "EMPTY": "Cihaz ayarlanmadı",
         "TITLE": "Parolasız Kimlik Doğrulama",
-        "DESCRIPTION": "ZITADEL'de şifresiz oturum açmak için WebAuthn tabanlı Kimlik Doğrulama Yöntemleri ekleyin.",
+        "DESCRIPTION": "ZITADEL'de parolasız oturum açmak için WebAuthn tabanlı Kimlik Doğrulama Yöntemleri ekleyin.",
         "MANAGE_DESCRIPTION": "Kullanıcılarınızın ikinci faktör yöntemlerini yönetin.",
         "U2F": "Yöntem ekle",
         "U2F_DIALOG_TITLE": "Kimlik doğrulayıcıyı doğrula",
-        "U2F_DIALOG_DESCRIPTION": "Kullandığınız şifresiz Giriş için bir ad girin",
+        "U2F_DIALOG_DESCRIPTION": "Kullandığınız parolasız Giriş için bir ad girin",
         "U2F_SUCCESS": "Parolasız Kimlik Doğrulama başarıyla oluşturuldu!",
         "U2F_ERROR": "Kurulum sırasında bir hata oluştu!",
         "U2F_NAME": "Kimlik Doğrulayıcı Adı",
         "TYPE": {
           "0": "MFA tanımlanmadı",
-          "1": "Tek Kullanımlık Şifre (OTP)",
+          "1": "Tek Kullanımlık Parola(OTP)",
           "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri"
         },
         "STATE": {
@@ -732,7 +732,7 @@
         "DESCRIPTION": "Hesabınız için en iyi güvenliği sağlamak için ikinci bir faktör ekleyin.",
         "MANAGE_DESCRIPTION": "Kullanıcılarınızın ikinci faktör yöntemlerini yönetin.",
         "ADD": "Faktör Ekle",
-        "OTP": "TOTP için Kimlik Doğrulayıcı Uygulaması (Zamana Dayalı Tek Kullanımlık Şifre)",
+        "OTP": "TOTP için Kimlik Doğrulayıcı Uygulaması (Zamana Dayalı Tek Kullanımlık Parola)",
         "OTP_DIALOG_TITLE": "OTP'yi ekle",
         "OTP_DIALOG_DESCRIPTION": "QR kodunu bir kimlik doğrulama uygulamasıyla tarayın ve OTP yöntemini doğrulayıp etkinleştirmek için aşağıdaki kodu girin.",
         "U2F": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri",
@@ -741,15 +741,15 @@
         "U2F_SUCCESS": "Faktör başarıyla eklendi!",
         "U2F_ERROR": "Kurulum sırasında bir hata oluştu!",
         "U2F_NAME": "Kimlik Doğrulayıcı Adı",
-        "OTPSMS": "SMS ile OTP (Tek Kullanımlık Şifre)",
-        "OTPEMAIL": "E-posta ile OTP (Tek Kullanımlık Şifre)",
-        "SETUPOTPSMSDESCRIPTION": "Bu telefon numarasını OTP (Tek Kullanımlık Şifre) ikinci faktörü olarak ayarlamak istiyor musunuz?",
+        "OTPSMS": "SMS ile OTP (Tek Kullanımlık Parola)",
+        "OTPEMAIL": "E-posta ile OTP (Tek Kullanımlık Parola)",
+        "SETUPOTPSMSDESCRIPTION": "Bu telefon numarasını OTP (Tek Kullanımlık Parola) ikinci faktörü olarak ayarlamak istiyor musunuz?",
         "OTPSMSSUCCESS": "OTP faktörü başarıyla kuruldu.",
         "OTPSMSPHONEMUSTBEVERIFIED": "Bu yöntemi kullanabilmeniz için telefonunuzun doğrulanması gerekmektedir.",
         "OTPEMAILSUCCESS": "OTP faktörü başarıyla kuruldu.",
         "TYPE": {
           "0": "MFA tanımlanmadı",
-          "1": "Tek Kullanımlık Şifre (OTP)",
+          "1": "Tek Kullanımlık Parola(OTP)",
           "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri"
         },
         "STATE": {
@@ -784,7 +784,7 @@
         "NAMEANDEMAILSECTION": "Ad ve E-posta",
         "GENDERLANGSECTION": "Cinsiyet ve Dil",
         "PHONESECTION": "Telefon numaraları",
-        "PASSWORDSECTION": "İlk Şifre",
+        "PASSWORDSECTION": "İlk Parola",
         "ADDRESSANDPHONESECTION": "Telefon numarası",
         "INITMAILDESCRIPTION": "Her iki seçenek de seçilirse başlatma için e-posta gönderilmez. "
       },
@@ -819,7 +819,7 @@
         "PREFERREDLOGINNAME": "Tercih edilen oturum açma adı",
         "PREFERRED_LANGUAGE": "Dil",
         "GENDER": "Cinsiyet",
-        "PASSWORD": "Şifre",
+        "PASSWORD": "Parola",
         "AVATAR": {
           "UPLOADTITLE": "Profil Resminizi Yükleyin",
           "UPLOADBTN": "Dosya seç",
@@ -871,17 +871,17 @@
         }
       },
       "PASSWORD": {
-        "TITLE": "Şifre",
-        "LABEL": "Güvenli bir şifre hesabın korunmasına yardımcı olur",
-        "DESCRIPTION": "Aşağıdaki politikaya göre yeni şifreyi girin.",
-        "OLD": "Mevcut Şifre",
-        "NEW": "Yeni Şifre",
-        "CONFIRM": "Yeni Şifreyi Onayla",
-        "NEWINITIAL": "Şifre",
-        "CONFIRMINITIAL": "Şifreyi Onayla",
-        "RESET": "Mevcut Şifreyi Sıfırla",
-        "SET": "Yeni Şifre Belirle",
-        "RESENDNOTIFICATION": "Şifre Sıfırlama Bağlantısını Gönder",
+        "TITLE": "Parola",
+        "LABEL": "Güvenli bir Parola hesabın korunmasına yardımcı olur",
+        "DESCRIPTION": "Aşağıdaki politikaya göre yeni Parolayı girin.",
+        "OLD": "Mevcut Parola",
+        "NEW": "Yeni Parola",
+        "CONFIRM": "Yeni Parolayı Onayla",
+        "NEWINITIAL": "Parola",
+        "CONFIRMINITIAL": "Parolayı Onayla",
+        "RESET": "Mevcut Parolayı Sıfırla",
+        "SET": "Yeni ParolaBelirle",
+        "RESENDNOTIFICATION": "ParolaSıfırlama Bağlantısını Gönder",
         "REQUIRED": "Gerekli alanların bazıları eksik.",
         "MINLENGTHERROR": "En azından olmalı {{value}} karakterler uzun.",
         "MAXLENGTHERROR": "Şundan az olmalı {{value}} karakterler."
@@ -897,7 +897,7 @@
       "ISINITIAL": "Kullanıcı henüz aktif değil.",
       "LOGINMETHODS": {
         "TITLE": "İletişim Bilgileri",
-        "DESCRIPTION": "Sağlanan bilgiler size şifre sıfırlama e-postaları gibi önemli bilgilerin gönderilmesi için kullanılır.",
+        "DESCRIPTION": "Sağlanan bilgiler size Parolasıfırlama e-postaları gibi önemli bilgilerin gönderilmesi için kullanılır.",
         "EMAIL": {
           "TITLE": "E-posta",
           "VALID": "doğrulanmış",
@@ -976,10 +976,10 @@
         "EMAILVERIFICATIONSENT": "E-posta doğrulama kodu gönderildi.",
         "OTPREMOVED": "OTP kaldırıldı.",
         "U2FREMOVED": "Faktör kaldırıldı.",
-        "PASSWORDLESSREMOVED": "Şifresiz kaldırıldı.",
-        "INITIALPASSWORDSET": "Başlangıç ​​şifresi belirlendi.",
-        "PASSWORDNOTIFICATIONSENT": "Şifre değişikliği bildirimi gönderildi.",
-        "PASSWORDCHANGED": "Şifre başarıyla değiştirildi.",
+        "PASSWORDLESSREMOVED": "parolasız kaldırıldı.",
+        "INITIALPASSWORDSET": "İlk parola belirlendi.",
+        "PASSWORDNOTIFICATIONSENT": "Paroladeğişikliği bildirimi gönderildi.",
+        "PASSWORDCHANGED": "Parolabaşarıyla değiştirildi.",
         "REACTIVATED": "Kullanıcı yeniden etkinleştirildi.",
         "DEACTIVATED": "Kullanıcı devre dışı bırakıldı.",
         "SELECTEDREACTIVATED": "Seçilen kullanıcılar yeniden etkinleştirildi.",
@@ -1256,7 +1256,7 @@
         "SELECTORGTOOLTIP": "Bu kuruluşu seçin.",
         "PRIMARYDOMAIN": "Birincil Etki Alanı",
         "STATE": "Durum",
-        "USEPASSWORD": "Başlangıç ​​Şifresini Ayarla",
+        "USEPASSWORD": "Başlangıç ​​parolasını Ayarla",
         "USEPASSWORDDESC": "Kullanıcının başlatma sırasında parolayı ayarlaması gerekmez."
       },
       "LIST": {
@@ -1325,8 +1325,8 @@
         "LANGUAGES": "Diller",
         "LOGIN": "Oturum Açma Davranışı ve Güvenliği",
         "LOCKOUT": "Lokavt",
-        "AGE": "Şifrenin geçerlilik süresi",
-        "COMPLEXITY": "Şifre karmaşıklığı",
+        "AGE": "Parolanın geçerlilik süresi",
+        "COMPLEXITY": "Parolakarmaşıklığı",
         "NOTIFICATIONS": "Bildirimler",
         "SMTP_PROVIDER": "SMTP Sağlayıcısı",
         "SMS_PROVIDER": "SMS/Telefon Sağlayıcısı",
@@ -1393,9 +1393,9 @@
         "REPLYTOADDRESS": "Yanıt Adresi",
         "HOSTANDPORT": "Ana Bilgisayar ve Bağlantı Noktası",
         "USER": "Kullanıcı",
-        "PASSWORD": "Şifre",
-        "SETPASSWORD": "SMTP Şifresini Ayarla",
-        "PASSWORDSET": "SMTP Şifresi başarıyla ayarlandı.",
+        "PASSWORD": "Parola",
+        "SETPASSWORD": "SMTP parolasını Ayarla",
+        "PASSWORDSET": "SMTP Parolası başarıyla ayarlandı.",
         "TLS": "Aktarım Katmanı Güvenliği (TLS)",
         "SAVED": "Başarıyla kaydedildi!",
         "NOCHANGES": "Değişiklik yok!",
@@ -1433,11 +1433,11 @@
           "1": "Başlatma Postası",
           "2": "E-posta doğrulaması",
           "3": "Telefon doğrulaması",
-          "4": "Şifre Sıfırlama",
+          "4": "ParolaSıfırlama",
           "5": "Parolasız Başlatma",
           "6": "Uygulama Sırrı",
-          "7": "Tek Kullanımlık Şifre (OTP) - SMS",
-          "8": "Tek Kullanımlık Şifre (OTP) - E-posta"
+          "7": "Tek Kullanımlık Parola(OTP) - SMS",
+          "8": "Tek Kullanımlık Parola(OTP) - E-posta"
         },
         "EXPIRY": "Son kullanma tarihi (dakika olarak)",
         "INCLUDEDIGITS": "Numaraları Ekle",
@@ -1492,8 +1492,8 @@
     "POLICY": {
       "APPLIEDTO": "Uygulanan",
       "PWD_COMPLEXITY": {
-        "TITLE": "Şifre Karmaşıklığı",
-        "DESCRIPTION": "Ayarlanan tüm şifrelerin belirli bir kalıba karşılık gelmesini sağlar",
+        "TITLE": "ParolaKarmaşıklığı",
+        "DESCRIPTION": "Ayarlanan tüm parolaların belirli bir kalıba karşılık gelmesini sağlar",
         "SYMBOLANDNUMBERERROR": "Bir rakam ve bir simge/noktalama işaretinden oluşmalıdır.",
         "SYMBOLERROR": "Bir sembol/noktalama işareti içermelidir.",
         "NUMBERERROR": "Bir rakam içermelidir.",
@@ -1502,7 +1502,7 @@
       "NOTIFICATION": {
         "TITLE": "Bildiri",
         "DESCRIPTION": "Hangi değişikliklere ilişkin bildirimlerin gönderileceğini belirler.",
-        "PASSWORDCHANGE": "Şifre değişikliği"
+        "PASSWORDCHANGE": "Paroladeğişikliği"
       },
       "PRIVATELABELING": {
         "DESCRIPTION": "Girişe kişiselleştirilmiş stilinizi verin ve davranışını değiştirin.",
@@ -1549,12 +1549,12 @@
         }
       },
       "PWD_AGE": {
-        "TITLE": "Şifre Sona Erme Tarihi",
-        "DESCRIPTION": "Şifrelerin süresinin dolması için bir politika belirleyebilirsiniz. "
+        "TITLE": "ParolaSona Erme Tarihi",
+        "DESCRIPTION": "parolaların süresinin dolması için bir politika belirleyebilirsiniz. "
       },
       "PWD_LOCKOUT": {
         "TITLE": "Kilitleme Politikası",
-        "DESCRIPTION": "Hesapların engelleneceği maksimum şifre yeniden deneme sayısını belirleyin."
+        "DESCRIPTION": "Hesapların engelleneceği maksimum Parolayeniden deneme sayısını belirleyin."
       },
       "PRIVATELABELING_POLICY": {
         "TITLE": "Özelleştirme",
@@ -1625,18 +1625,18 @@
           "initMfaOtpText": "MFA'yı başlat",
           "initMfaPromptText": "MFA İstemini Başlat",
           "initMfaU2fText": "Evrensel İkinci Faktörü Başlat",
-          "initPasswordDoneText": "Şifreyi başlatma işlemi tamamlandı",
-          "initPasswordText": "Şifreyi başlat",
+          "initPasswordDoneText": "Parolayı başlatma işlemi tamamlandı",
+          "initPasswordText": "Parolayı başlat",
           "initializeDoneText": "Kullanıcıyı başlatma işlemi tamamlandı",
           "initializeUserText": "Kullanıcıyı başlat",
           "linkingUserDoneText": "Kullanıcının bağlanması tamamlandı",
           "loginText": "Giriş yapmak",
           "logoutText": "Oturumu kapat",
           "mfaProvidersText": "MFA Sağlayıcıları",
-          "passwordChangeDoneText": "Şifre değişikliği yapıldı",
-          "passwordChangeText": "Şifre değişikliği",
-          "passwordResetDoneText": "Şifre sıfırlama işlemi tamamlandı",
-          "passwordText": "Şifre",
+          "passwordChangeDoneText": "Paroladeğişikliği yapıldı",
+          "passwordChangeText": "Paroladeğişikliği",
+          "passwordResetDoneText": "Parolasıfırlama işlemi tamamlandı",
+          "passwordText": "Parola",
           "registrationOptionText": "Kayıt Seçenekleri",
           "registrationOrgText": "Kuruluşu Kaydet",
           "registrationUserText": "Kullanıcıyı Kaydet",
@@ -1646,10 +1646,10 @@
           "usernameChangeText": "Kullanıcı adı değişikliği",
           "verifyMfaOtpText": "OTP'yi doğrulayın",
           "verifyMfaU2fText": "Evrensel İkinci Faktörü Doğrulayın",
-          "passwordlessPromptText": "Şifresiz İstem",
-          "passwordlessRegistrationDoneText": "Şifresiz Kayıt Tamamlandı",
-          "passwordlessRegistrationText": "Şifresiz Kayıt",
-          "passwordlessText": "Şifresiz",
+          "passwordlessPromptText": "parolasız İstem",
+          "passwordlessRegistrationDoneText": "parolasız Kayıt Tamamlandı",
+          "passwordlessRegistrationText": "parolasız Kayıt",
+          "passwordlessText": "parolasız",
           "externalRegistrationUserOverviewText": "Harici Kayıt Kullanıcıya Genel Bakış"
         }
       },
@@ -1661,10 +1661,10 @@
           "VP": "Telefonu Doğrula",
           "VSO": "SMS OTP'yi doğrulayın",
           "VEO": "E-posta OTP'sini Doğrulayın",
-          "PR": "Şifre Sıfırlama",
+          "PR": "ParolaSıfırlama",
           "DC": "Alan Adı Talebi",
-          "PL": "Şifresiz",
-          "PC": "Şifre Değişikliği"
+          "PL": "parolasız",
+          "PC": "ParolaDeğişikliği"
         },
         "CHIPS": {
           "firstname": "İsim",
@@ -1682,8 +1682,8 @@
           "changedate": "Tarihi değiştir",
           "username": "Kullanıcı adı",
           "tempUsername": "Geçici kullanıcı adı",
-          "otp": "Tek kullanımlık şifre",
-          "verifyUrl": "Tek kullanımlık şifre URL'sini doğrulayın",
+          "otp": "Tek kullanımlık Parola",
+          "verifyUrl": "Tek kullanımlık ParolaURL'sini doğrulayın",
           "expiry": "Son kullanma tarihi"
         },
         "TOAST": {
@@ -1701,7 +1701,7 @@
         "HASLOWERCASE": "küçük harf içermelidir",
         "HASUPPERCASE": "büyük harf içermelidir",
         "SHOWLOCKOUTFAILURES": "kilitleme hatalarını göster",
-        "MAXPASSWORDATTEMPTS": "Şifre maksimum deneme sayısı",
+        "MAXPASSWORDATTEMPTS": "Parolamaksimum deneme sayısı",
         "MAXOTPATTEMPTS": "OTP maksimum deneme sayısı",
         "EXPIREWARNDAYS": "Günler sonra Son Kullanma Uyarısı",
         "MAXAGEDAYS": "Gün cinsinden maksimum geçerlilik",
@@ -1709,16 +1709,16 @@
         "USERLOGINMUSTBEDOMAIN_DESCRIPTION": "Bu ayarı etkinleştirirseniz tüm oturum açma adlarının sonuna kuruluş alanı eklenir. ",
         "VALIDATEORGDOMAINS": "Kuruluş etki alanı doğrulaması gerekli (DNS veya HTTP sorgulaması)",
         "SMTPSENDERADDRESSMATCHESINSTANCEDOMAIN": "SMTP Gönderen Adresi Örnek Etki Alanıyla eşleşiyor",
-        "ALLOWUSERNAMEPASSWORD_DESC": "Kullanıcı adı ve şifreyle geleneksel oturum açmaya izin verilir.",
+        "ALLOWUSERNAMEPASSWORD_DESC": "Kullanıcı adı ve parolayla geleneksel oturum açmaya izin verilir.",
         "ALLOWEXTERNALIDP_DESC": "Temel kimlik sağlayıcıları için oturum açmaya izin veriliyor",
         "ALLOWREGISTER_DESC": "Seçenek seçilirse oturum açma işleminde kullanıcıyı kaydetmeye yönelik ek bir adım görünür.",
         "FORCEMFA": "MFA'yı zorla",
         "FORCEMFALOCALONLY": "Yerel kimliği doğrulanmış kullanıcılar için MFA'yı zorunlu kıl",
         "FORCEMFALOCALONLY_DESC": "Bu seçenek seçilirse yerel kimlik doğrulaması yapılmış kullanıcıların oturum açmak için ikinci bir faktör yapılandırması gerekir.",
-        "HIDEPASSWORDRESET_DESC": "Bu seçenek seçilirse kullanıcı, oturum açma işlemi sırasında şifresini sıfırlayamaz.",
+        "HIDEPASSWORDRESET_DESC": "Bu seçenek seçilirse kullanıcı, oturum açma işlemi sırasında parolasını sıfırlayamaz.",
         "HIDELOGINNAMESUFFIX": "Oturum Açma Adı son ekini gizle",
         "HIDELOGINNAMESUFFIX_DESC": "Oturum açma arayüzünde oturum açma adı son ekini gizler",
-        "IGNOREUNKNOWNUSERNAMES_DESC": "Seçenek seçilirse kullanıcı bulunamasa bile giriş işleminde şifre ekranı görüntülenecektir. ",
+        "IGNOREUNKNOWNUSERNAMES_DESC": "Seçenek seçilirse kullanıcı bulunamasa bile giriş işleminde Parolaekranı görüntülenecektir. ",
         "ALLOWDOMAINDISCOVERY_DESC": "Seçenek seçilirse, giriş ekranında bilinmeyen bir kullanıcı adı girişinin son eki (@domain.com) kuruluş alan adlarıyla eşleştirilecek ve başarı durumunda o kuruluşun kaydına yönlendirilecektir.",
         "DEFAULTREDIRECTURI": "Varsayılan Yönlendirme URI'sı",
         "DEFAULTREDIRECTURI_DESC": "Oturum açma işlemi bir uygulama bağlamı olmadan (ör. postadan) başlatıldığında kullanıcının nereye yönlendirileceğini tanımlar.",
@@ -2124,7 +2124,7 @@
       "LDAPUSERBINDING": "Kullanıcı bağlama",
       "BASEDN": "TemelDn",
       "BINDDN": "BindDn",
-      "BINDPASSWORD": "Şifreyi Bağla",
+      "BINDPASSWORD": "Parolayı Bağla",
       "SERVERS": "Sunucular",
       "STARTTLS": "TLS'yi başlat",
       "TIMEOUT": "Saniye cinsinden zaman aşımı",
@@ -2205,7 +2205,7 @@
     },
     "MFA": {
       "LIST": {
-        "MULTIFACTORTITLE": "Şifresiz",
+        "MULTIFACTORTITLE": "parolasız",
         "MULTIFACTORDESCRIPTION": "Parolasız Kimlik Doğrulamanız için Çoklu Faktörlerinizi burada tanımlayın.",
         "SECONDFACTORTITLE": "Çok Faktörlü Kimlik Doğrulama",
         "SECONDFACTORDESCRIPTION": "Parola kimlik doğrulamanızı güvence altına alabileceğiniz diğer olası faktörleri tanımlayın."
@@ -2230,10 +2230,10 @@
       },
       "SECONDFACTORTYPES": {
         "0": "Bilinmiyor",
-        "1": "Authenticator Uygulaması (TOTP) ile Tek Kullanımlık Şifre",
+        "1": "Authenticator Uygulaması (TOTP) ile Tek Kullanımlık Parola",
         "2": "Parmak İzi, Güvenlik Anahtarları, Yüz Kimliği ve diğerleri",
-        "3": "E-postayla Tek Kullanımlık Şifre (E-posta OTP)",
-        "4": "SMS ile Tek Kullanımlık Şifre (SMS OTP)"
+        "3": "E-postayla Tek Kullanımlık Parola(E-posta OTP)",
+        "4": "SMS ile Tek Kullanımlık Parola(SMS OTP)"
       }
     },
     "LOGINPOLICY": {
@@ -2247,7 +2247,7 @@
         "DESCRIPTION": "Kimlik doğrulama için önceden tanımlanmış veya kendi oluşturduğunuz sağlayıcıları seçebilirsiniz.",
         "SELECTIDPS": "Kimlik sağlayıcılar"
       },
-      "PASSWORDLESS": "Şifresiz Giriş",
+      "PASSWORDLESS": "parolasız Giriş",
       "PASSWORDLESSTYPE": {
         "0": "İzin verilmiyor",
         "1": "İzin verilmiş"
@@ -2530,7 +2530,7 @@
         },
         "BASIC": {
           "TITLE": "Temel",
-          "DESCRIPTION": "Kullanıcı Adı ve Şifre ile Kimlik Doğrulama"
+          "DESCRIPTION": "Kullanıcı Adı ve Parolaile Kimlik Doğrulama"
         },
         "IMPLICIT": {
           "TITLE": "Implicit",

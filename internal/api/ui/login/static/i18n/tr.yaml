@@ -161,20 +161,20 @@ Passwordless:
   Description: FaceID, Windows Hello veya Parmak İzi gibi cihazınız tarafından sağlanan kimlik doğrulama yöntemleriyle oturum açın.
   NotSupported: WebAuthN tarayıcınız tarafından desteklenmiyor. Lütfen güncel olduğundan emin olun veya farklı bir tarayıcı kullanın (örn. Chrome, Safari, Firefox)
   ErrorRetry: Yeniden deneyin veya farklı bir yöntem seçin.
-  LoginWithPwButtonText: Parola ile giriş yapın
+  LoginWithPwButtonText: Parola ile giriş 
   ValidateTokenButtonText: Parolasız Giriş
 
 PasswordlessPrompt:
   Title: Parolasız Kurulum
-  Description: Would you like to setup passwordless login? (Authentication methods of your device like FaceID, Windows Hello or Fingerprint)
-  DescriptionInit: You need to set up passwordless login. Use the link you were given to register your device.
-  PasswordlessButtonText: Go passwordless
+  Description: Parolasız oturum açmak için diğer  kimlik doğrulama yöntemlerini ayarlamak ister misiniz? (FaceID, Windows Hello veya Parmak İzi gibi cihazınızın kimlik doğrulama yöntemleri)
+  DescriptionInit: Parolasız oturum açmayı ayarlamanız gerekir. Cihazınızı kaydetmek için size verilen bağlantıyı kullanın.
+  PasswordlessButtonText: Parolasız giriş 
   NextButtonText: Sonraki
   SkipButtonText: Atla
 
 PasswordlessRegistration:
   Title: Parolasız Kurulum
-  Description: Bir ad vererek (örneğin MyMobilePhone, MacBook, vb.) ve ardından aşağıdaki 'Şifresiz kayıt ol' düğmesine tıklayarak kimlik doğrulamanızı ekleyin.
+  Description: Bir ad vererek (örneğin MyMobilePhone, MacBook, vb.) ve ardından aşağıdaki 'Parolasız kayıt ol' düğmesine tıklayarak kimlik doğrulamanızı ekleyin.
   NotSupported: WebAuthN tarayıcınız tarafından desteklenmiyor. Lütfen güncel olduğundan emin olun veya farklı bir tarayıcı kullanın (örn. Chrome, Safari, Firefox)
   RegisterTokenButtonText: Parolasız kaydolun
   ErrorRetry: Yeniden deneyin, yeni bir görev oluşturun veya farklı bir yöntem seçin.
@@ -188,8 +188,8 @@ PasswordlessRegistrationDone:
 
 PasswordChange:
   Title: Parola Değiştir
-  Description: Parolanızı değiştirin. Eski ve yeni şifrenizi girin.
-  ExpiredDescription: Parolanızın süresi doldu ve değiştirilmesi gerekiyor. Eski ve yeni şifrenizi girin.
+  Description: Parolanızı değiştirin. Eski ve yeni parolanızı girin.
+  ExpiredDescription: Parolanızın süresi doldu ve değiştirilmesi gerekiyor. Eski ve yeni parolanızı girin.
   OldPasswordLabel: Eski Parola
   NewPasswordLabel: Yeni Parola
   NewPasswordConfirmLabel: Yeni Parola Onayı
@@ -200,7 +200,7 @@ PasswordChange:
 PasswordChangeDone:
   Title: Parola Değiştir
   Description: Parolanız başarıyla değiştirildi.
-  NextButtonText: Next
+  NextButtonText: Sonraki
 
 PasswordResetDone:
   Title: Parola Sıfırlama Bağlantısı Gönderildi
@@ -209,10 +209,10 @@ PasswordResetDone:
 
 EmailVerification:
   Title: E-Posta Doğrulaması
-  Description: We have sent you an email to verify your address. Please enter the code in the form below.
-  CodeLabel: Code
-  NextButtonText: Next
-  ResendButtonText: Resend Code
+  Description: E-posta adresinizi doğrulamanız için size bir kod gönderdik. Lütfen kodu aşağıdaki forma girin.
+  CodeLabel: Kod
+  NextButtonText: Sonraki
+  ResendButtonText: Kodu Yeniden Gönder
 
 EmailVerificationDone:
   Title: E-Posta Doğrulaması
@@ -231,7 +231,7 @@ RegisterOption:
 RegistrationUser:
   Title: Kaydolma
   Description: Kullanıcı bilgilerinizi girin. E-posta adresiniz oturum açma adınız olarak kullanılacaktır.
-  DescriptionOrgRegister: Enter your Userdata.
+  DescriptionOrgRegister: Kullanıcı bilgilerinizi girin.
   EmailLabel: E-Posta
   UsernameLabel: Kullanıcı adı
   FirstnameLabel: Ad
@@ -338,7 +338,7 @@ LinkingUserPrompt:
   OtherButtonText: Diğer seçenekler
 
 LinkingUsersDone:
-  Title: Linking User
+  Title: Kullanıcı Bağlama
   Description: Kullanıcı bağlandı.
   CancelButtonText: İptal
   NextButtonText: Sonraki
@@ -381,7 +381,7 @@ DeviceAuth:
     AccessToScopes: aşağıdaki kapsamlara erişebilir
     Button:
       Allow: İzin veriyorum
-      Deny: Reddetmek
+      Deny: Kabul etmiyorum
   Done:
     Description: Tamamlandı.
     Approved: Cihaz yetkilendirmesi onaylandı. Artık cihaza dönebilirsiniz.
@@ -437,69 +437,69 @@ Errors:
       Empty: Telefon numarası boş
       NotChanged: Telefon değiştirilmedi
     Address:
-      NotFound: Address not found
-      NotChanged: Address not changed
+      NotFound: Adres bulunamadı
+      NotChanged: Adres değiştirilmedi
     Username:
-      AlreadyExists: Username already taken
-      Reserved: Username is already taken
-      Empty: Username is empty
+      AlreadyExists: Kullanıcı adı zaten mevcut
+      Reserved: Kullanıcı adı zaten alınmış
+      Empty: Kullanıcı adı boş
     Password:
-      ConfirmationWrong: Password confirmation is wrong
-      Empty: Password is empty
-      Invalid: Password is invalid
-      InvalidAndLocked: Password is invalid and user is locked, contact your administrator.
-      NotChanged: New password cannot be the same as your current password
+      ConfirmationWrong: Parola doğrulaması yanlış
+      Empty: Parola boş
+      Invalid: Parola geçersiz
+      InvalidAndLocked: Parola geçersiz ve kullanıcı kilitli, yöneticinize başvurun.
+      NotChanged: Yeni parola mevcut parolanızla aynı olamaz
     UsernameOrPassword:
-      Invalid: Username or Password is invalid
+      Invalid: Kullanıcı Adı veya Parola geçersiz
     PasswordComplexityPolicy:
-      NotFound: Password policy not found
-      MinLength: Password is too short
-      HasLower: Password must contain lower letter
-      HasUpper: Password must contain upper letter
-      HasNumber: Password must contain number
-      HasSymbol: Password must contain symbol
+      NotFound: Parola politikası bulunamadı
+      MinLength: Parolanız çok kısa
+      HasLower: Parolanız en az bir kucuk harf icermelidir
+      HasUpper: Parolanız en az bir büyük harf içermelidir
+      HasNumber: Parolanız en az bir rakam içermelidir
+      HasSymbol: Parolanız en az bir sembol içermelidir
     Code:
-      Expired: Code is expired
-      Invalid: Code is invalid
-      Empty: Code is empty
-      CryptoCodeNil: Crypto code is nil
-      NotFound: Could not find code
-      GeneratorAlgNotSupported: Unsupported generator algorithm
+      Expired: Kodun süresi doldu
+      Invalid: Kod geçersiz
+      Empty: Kod boş
+      CryptoCodeNil:  Şifreleme kodu bulunamadı
+      NotFound: Kod bulunamadı
+      GeneratorAlgNotSupported: Sifreleme algoritması desteklenmiyor
     EmailVerify:
-      UserIDEmpty: UserID is empty
+      UserIDEmpty: Kullanıcı ID'si eksik
     ExternalData:
-      CouldNotRead: External data could not be read correctly
+      CouldNotRead: Harici veriler doğru şekilde okunamadı
     MFA:
-      NoProviders: No available multifactor providers
+      NoProviders: Kullanılabilir çok faktörlü sağlayıcı bulunamadı
       OTP:
-        AlreadyReady: Multifactor OTP (OneTimePassword) is already setup
-        NotExisting: Multifactor OTP (OneTimePassword) doesn't exist
-        InvalidCode: Invalid code
-        NotReady: Multifactor OTP (OneTimePassword) isn't ready
-    Locked: User is locked
-    SomethingWentWrong: Something went wrong
-    NotActive: User is not active
+        AlreadyReady: Çok Faktörlü OTP (OneTimePassword) zaten kurulu
+        NotExisting: Çok Faktörlü OTP (OneTimePassword) kurulu değil
+        InvalidCode: Gecersiz kod
+        NotReady: Çok Faktörlü OTP (OneTimePassword) hazır değil
+    Locked: Kullanıcı kilitlendi
+    SomethingWentWrong: Bir şeyler ters gitti
+    NotActive: Kullanıcı aktif değil
     ExternalIDP:
-      IDPTypeNotImplemented: IDP Type is not implemented
-      NotAllowed: External Login Provider not allowed
-      IDPConfigIDEmpty: Identity Provider ID is empty
-      ExternalUserIDEmpty: External User ID is empty
-      UserDisplayNameEmpty: User Display Name is empty
-      NoExternalUserData: No external User Data received
-      CreationNotAllowed: Creation of a new user is not allowed on this provider
-      LinkingNotAllowed: Linking of a user is not allowed on this provider
-      NoOptionAllowed: Neither creation of linking is allowed on this provider. Please contact your administrator.
-    GrantRequired: Login not possible. The user is required to have at least one grant on the application. Please contact your administrator.
-    ProjectRequired: Login not possible. The organization of the user must be granted to the project. Please contact your administrator.
+      IDPTypeNotImplemented: IDP Türü uygulanmıyor
+      NotAllowed: Harici Oturum Açma Sağlayıcısına izin verilmiyor
+      IDPConfigIDEmpty: Kimlik Sağlayıcı Kimliği boş
+      ExternalUserIDEmpty: Harici Kullanıcı Kimliği boş
+      UserDisplayNameEmpty: Görünen Kullanıcı Adı boş
+      NoExternalUserData: Harici Kullanıcı Verisi alınmadı
+      CreationNotAllowed: Bu sağlayıcıda yeni bir kullanıcı oluşturulmasına izin verilmiyor
+      LinkingNotAllowed: Bu sağlayıcıda bir kullanıcının bağlantısı yapılamaz.
+      NoOptionAllowed: Bu sağlayıcıda hiçbir bağlantı oluşturulmasına izin verilmiyor. Lütfen yöneticinizle iletişime geçin.
+    GrantRequired: Giriş yapılamıyor. Kullanıcının uygulama üzerinde en az bir yetkiye sahip olması gerekmektedir. Lütfen yöneticinizle iletişime geçin.
+    ProjectRequired: Giriş yapılamıyor.  Kullanıcının organizasyonu projeye verilmelidir.  Lütfen yöneticinizle iletişime geçin.
   IdentityProvider:
-    InvalidConfig: Identity Provider configuration is invalid
+    InvalidConfig: Kimlik Sağlayıcı konfigürasyonu geçersiz
   IAM:
     LockoutPolicy:
-      NotExisting: Lockout Policy not existing
+      NotExisting: Kilitleme Politikası mevcut değil
   Org:
     LoginPolicy:
-      RegistrationNotAllowed: Registration is not allowed
+      RegistrationNotAllowed: Kayıt işlemine izin verilmiyor
   DeviceAuth:
-    NotExisting: User Code doesn't exist
+    NotExisting: Kullanıcı Kodu mevcut değil
 
 optional: (opsiyonel)
