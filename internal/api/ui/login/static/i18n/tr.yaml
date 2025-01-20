@@ -230,7 +230,7 @@ RegisterOption:
 
 RegistrationUser:
   Title: Kaydolma
-  Description: Kullanıcı bilgilerinizi girin. E-posta adresiniz oturum açma adınız olarak kullanılacaktır.
+  Description: Merhaba! Buraya güvenliğini sağlamak istediğiniz e-posta adreslerini ekleyebilirsiniz. Bu adresler; kendi e-posta hesaplarınız, aile bireylerinizin adresleri ya da şirket hesaplarınız olabilir. Sizin için önemli olan tüm adresleri eklemekten çekinmeyin. Paketinizin kapsamına göre, eklediğiniz tüm e-posta adreslerini koruma altına alacağız. Adresleri ekledikten sonra hemen harekete geçiyoruz ve internette sizin için tehdit oluşturacak tüm verileri araştırmaya başlıyoruz! Sizin ve sevdiklerinizin güvende olması bizim önceliğimiz. Hadi, başlayalım!
   DescriptionOrgRegister: Kullanıcı bilgilerinizi girin.
   EmailLabel: E-Posta
   UsernameLabel: Kullanıcı adı
